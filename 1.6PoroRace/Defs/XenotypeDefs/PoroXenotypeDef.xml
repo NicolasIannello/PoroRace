@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>PoroRace</defName>
+		<label>Poro</label>
+		<description>A poro</description>
+		<descriptionShort>A poro</descriptionShort>
+		<iconPath>Xenotypes/PoroIcon</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>MoveSpeed_Quick</li>
+			<li>WoundHealing_Slow</li>
+			<li>Mood_Sanguine</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>KindInstinct</li>
+			<li>Delicate</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Furskin</li>
+			<li>Sleepy</li>
+			
+			<li>Headbone_MiniHorns</li>
+			<li>Hair_SnowWhite</li>
+			
+			<li>AptitudePoor_Shooting</li>
+			<li>AptitudePoor_Melee</li>
+			<li>AptitudePoor_Mining</li>
+
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AptitudeTerrible_Cooking</li>
+
+			<li>AptitudeRemarkable_Social</li>
+			<li>AptitudeRemarkable_Animals</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>
