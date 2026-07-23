@@ -8,10 +8,11 @@
 
 		<alienRace>
 			<generalSettings>
+				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries>
 					<li><defName>Asexual</defName></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Delicate</defName></li>
-					<li MayRequire="Ludeon.RimWorld.Anomaly"><defName>Joyous</defName></li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly"><defName>Joyous</defName><chance>50</chance></li>
 					<li><defName>Kind</defName></li>
 					<li>
 						<options>
@@ -71,51 +72,12 @@
 						<li>MyCustomHeadTypeDef</li>
 					</headTypes>-->
 					
-					<customDrawSize>(0.2, 0.5)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
-					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
-					<headOffset>(0.0, 0.0)</headOffset>
+					<customDrawSize>(0.0, 0.0)</customDrawSize>
+					<customHeadDrawSize>(1.2, 1.2)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.0, 0.0)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.2, 1.2)</customPortraitHeadDrawSize>
+					<headOffset>(0.0, -0.5)</headOffset>
 					
-					<customFemaleDrawSize>(1.0, 1.0)</customFemaleDrawSize>
-					<customFemaleHeadDrawSize>(1.0, 1.0)</customFemaleHeadDrawSize>
-					<customFemalePortraitDrawSize>(1.0, 1.0)</customFemalePortraitDrawSize>
-					<customFemalePortraitHeadDrawSize>(1.0, 1.0)</customFemalePortraitHeadDrawSize>
-					<headFemaleOffset>(0.0, 0.0)</headFemaleOffset>
-
-					<!--<headOffsetDirectional>  ignore????
-						<north>
-							<layerOffset>0.1</layerOffset>
-							<offset>(0.0, 0.1)</offset>
-							<bodyTypes>
-								<Hulk>(0.0, 0.3)</Hulk>
-								<Fat>
-									(0.0, -0.1)</Hulk>
-								</bodyTypes>
-							<portraitBodyTypes>
-								<Hulk>(0.0, 0.3)</Hulk>
-								<Fat>
-									(0.0, -0.1)</Hulk>
-								</portraitBodyTypes>
-							<headTypes>
-								<Male_AverageNormal>(0.0, -0.1)</Male_AverageNormal>
-								<Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
-							</headTypes>
-							<portraitHeadTypes>
-								<Male_AverageNormal>(0.0, -0.1)</Male_AverageNormal>
-								<Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
-							</portraitHeadTypes>
-						</north>
-						<south>
-						</south>
-						<east>
-						</east>
-						<west>
-						</west>
-					</headOffsetDirectional>
-					<headFemaleOffsetDirectional>
-					</headFemaleOffsetDirectional>-->
-
 					<!--<headBodyPartDef>AlienHead</headBodyPartDef>  ???????-->
 
 				</alienPartGenerator>
@@ -183,6 +145,39 @@
 				<canReproduceWithSelf>false</canReproduceWithSelf>
 			</raceRestriction>
 		</alienRace>
+		<statBases>
+			<!--<MarketValue>1750</MarketValue>-->
+			<!--<Mass>50</Mass>-->
+			<!--<MoveSpeed>4.8</MoveSpeed>-->
+			<ComfyTemperatureMax>20</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ImmunityGainSpeed>2</ImmunityGainSpeed>
+			<!--<CarryingCapacity>56</CarryingCapacity>-->
+			<!--<PainShockThreshold>0.7</PainShockThreshold>-->
+			<!--<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>-->
+			<EatingSpeed>2</EatingSpeed>
+			<!--<MeatAmount>35</MeatAmount>-->
+			<!--<LeatherAmount>30</LeatherAmount>-->
+			<!--<MeleeDodgeChance>1.15</MeleeDodgeChance>-->
+			<!--<NegotiationAbility>0.85</NegotiationAbility>-->
+		</statBases>
+		<race>
+			<lifeExpectancy>300</lifeExpectancy>
+			<!--<leatherDef>Leather_Light</leatherDef>-->
+			<body>PoroBody</body>
+			<!--<baseBodySize>0.8</baseBodySize>-->
+			<!--<gestationPeriodDays>14</gestationPeriodDays>-->
+			<!--<litterSizeCurve Inherit="False">
+					<points>
+						<li>(0.5, 0)</li>
+						<li>(1, 0.49)</li>
+						<li>(2, 0.45)</li>
+						<li>(3, 0.05)</li>
+						<li>(4, 0.01)</li>
+						<li>(5, 0)</li>
+					</points>
+				</litterSizeCurve>-->
+		</race>
 	</AlienRace.ThingDef_AlienRace>
 
 </Defs>
