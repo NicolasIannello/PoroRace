@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace Name="PoroRaceStats" ParentName="Human">
+		<defName>Poro</defName>
+		<label>Poro</label>
+		<description>A poro.</description>
+
+		<alienRace>
+			<generalSettings>
+				<forcedRaceTraitEntries>
+					<li><defName>Asexual</defName></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Delicate</defName></li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly"><defName>Joyous</defName></li>
+					<li><defName>Kind</defName></li>
+					<li>
+						<options>
+							<li><defName Degree="1">SpeedOffset</defName></li>
+							<li><defName Degree="2">SpeedOffset</defName></li>
+						</options>
+						<count>1</count>
+						<chance>40</chance>
+					</li>
+					<li>
+						<options>
+							<li><defName Degree="1">Industriousness</defName></li>
+							<li><defName Degree="-1">Industriousness</defName></li>
+							<li><defName Degree="-2">Industriousness</defName></li>
+						</options>
+						<count>1</count>
+						<chance>30</chance>
+					</li>
+					<li><defName Degree="1">NaturalMood</defName><chance>50</chance></li>
+					<li><defName>Wimp</defName><chance>30</chance></li>
+				</forcedRaceTraitEntries>
+
+				<!--<validBeds> aniaml bed????
+					<li>AlienRaceDefName</li>
+				</validBeds>-->
+				
+				<immuneToXenophobia>true</immuneToXenophobia>
+
+				<!--<ageSkillFactorCurve>
+					<points>
+						<li>(3, 0.2)</li>
+						<li>(18, 1)</li>
+						<li>(35, 1)</li>
+						<li>(60, 1.6)</li>
+					</points>
+				</ageSkillFactorCurve>-->
+
+				<!--<lovinIntervalHoursFromAge> 1.4
+					<points>
+						<li>(16, 1.5)</li>
+						<li>(22, 1.5)</li>
+						<li>(30, 4)</li>
+						<li>(50, 12)</li>
+						<li>(75, 36)</li>
+					</points>
+				</lovinIntervalHoursFromAge>-->
+
+				<!--<corpseCategory>CategoryDef</corpseCategory>  Animal-->
+
+				<abilities>
+					<li><defName>AnimalWarcall</defName><chance>30</chance></li>
+				</abilities>
+
+
+				<alienPartGenerator>
+					<!--<headTypes Inherit="False">
+						<li>MyCustomHeadTypeDef</li>
+					</headTypes>-->
+					
+					<customDrawSize>(0.2, 0.5)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+					<headOffset>(0.0, 0.0)</headOffset>
+					
+					<customFemaleDrawSize>(1.0, 1.0)</customFemaleDrawSize>
+					<customFemaleHeadDrawSize>(1.0, 1.0)</customFemaleHeadDrawSize>
+					<customFemalePortraitDrawSize>(1.0, 1.0)</customFemalePortraitDrawSize>
+					<customFemalePortraitHeadDrawSize>(1.0, 1.0)</customFemalePortraitHeadDrawSize>
+					<headFemaleOffset>(0.0, 0.0)</headFemaleOffset>
+
+					<!--<headOffsetDirectional>  ignore????
+						<north>
+							<layerOffset>0.1</layerOffset>
+							<offset>(0.0, 0.1)</offset>
+							<bodyTypes>
+								<Hulk>(0.0, 0.3)</Hulk>
+								<Fat>
+									(0.0, -0.1)</Hulk>
+								</bodyTypes>
+							<portraitBodyTypes>
+								<Hulk>(0.0, 0.3)</Hulk>
+								<Fat>
+									(0.0, -0.1)</Hulk>
+								</portraitBodyTypes>
+							<headTypes>
+								<Male_AverageNormal>(0.0, -0.1)</Male_AverageNormal>
+								<Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
+							</headTypes>
+							<portraitHeadTypes>
+								<Male_AverageNormal>(0.0, -0.1)</Male_AverageNormal>
+								<Female_AverageNormal>(0.0, 0.2)</Female_AverageNormal>
+							</portraitHeadTypes>
+						</north>
+						<south>
+						</south>
+						<east>
+						</east>
+						<west>
+						</west>
+					</headOffsetDirectional>
+					<headFemaleOffsetDirectional>
+					</headFemaleOffsetDirectional>-->
+
+					<!--<headBodyPartDef>AlienHead</headBodyPartDef>  ???????-->
+
+				</alienPartGenerator>
+
+				<raceGenes>
+					<li>
+						<options>
+							<li><defName>Hair_LightTeal</defName></li>
+							<li><defName>Hair_Pink</defName></li>
+							<li><defName>Hair_SnowWhite</defName></li>
+						</options>
+						<count>1</count>
+						<chance>100</chance>
+					</li>
+					<li><defName>WoundHealing_Slow</defName><chance>100</chance></li>
+					<li><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
+					<li><defName>RobustDigestion</defName><chance>100</chance></li>
+					<li><defName>Learning_Slow</defName><chance>100</chance></li>
+					<li><defName>Furskin</defName><chance>100</chance></li>
+					<li><defName>Sleepy</defName><chance>100</chance></li>
+					<li><defName>Headbone_MiniHorns</defName><chance>100</chance></li>
+					<li><defName>AptitudePoor_Melee</defName><chance>100</chance></li>
+					<li><defName>AptitudePoor_Crafting</defName><chance>100</chance></li>
+					<li><defName>AptitudeTerrible_Medicine</defName><chance>100</chance></li>
+					<li><defName>AptitudeTerrible_Intellectual</defName><chance>100</chance></li>
+					<li><defName>AptitudePoor_Cooking</defName><chance>100</chance></li>
+					<li><defName>AptitudeRemarkable_Social</defName><chance>100</chance></li>
+					<li><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>
+				</raceGenes>
+
+				<reproduction>
+					<gestatingGender>Either</gestatingGender>
+				</reproduction>
+				
+			</generalSettings>
+
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>AteWithoutTable</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+
+			<relationSettings>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+			</relationSettings>
+
+			<raceRestriction>
+				<blackApparelList>
+					<!--<li>Apparel_Tuque</li> all body armor-->
+				</blackApparelList>
+
+				<onlyReproduceWithRestrictedRaces>false</onlyReproduceWithRestrictedRaces>
+				<reproductionList>
+				</reproductionList>
+				<whiteReproductionList>
+				</whiteReproductionList>
+				<canReproduce>false</canReproduce>
+				<canReproduceWithSelf>false</canReproduceWithSelf>
+			</raceRestriction>
+		</alienRace>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

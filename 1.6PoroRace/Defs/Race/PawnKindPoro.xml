@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="PoroPawnKind" ParentName="BasePlayerPawnKind">
+		<defName>PoroColonist</defName>
+		<label>poro colonist</label>
+		<race>Poro</race>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+
+		<initialResistanceRange>4~10</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+
+	</PawnKindDef>
+
+</Defs>
