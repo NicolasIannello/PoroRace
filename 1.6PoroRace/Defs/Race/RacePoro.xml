@@ -63,7 +63,7 @@
 				<!--<corpseCategory>CategoryDef</corpseCategory>  Animal-->
 
 				<abilities>
-					<li><defName>AnimalWarcall</defName><chance>30</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AnimalWarcall</defName><chance>30</chance></li>
 				</abilities>
 
 				<alienPartGenerator>
@@ -180,19 +180,19 @@
 						<count>1</count>
 						<chance>100</chance>
 					</li>-->
-					<li><defName>WoundHealing_Slow</defName><chance>100</chance></li>
-					<li><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
-					<li><defName>RobustDigestion</defName><chance>100</chance></li>
-					<li><defName>Learning_Slow</defName><chance>100</chance></li>
-					<li><defName>Sleepy</defName><chance>100</chance></li>
-					<li><defName>Headbone_MiniHorns</defName><chance>100</chance></li>
-					<li><defName>AptitudePoor_Melee</defName><chance>100</chance></li>
-					<li><defName>AptitudePoor_Crafting</defName><chance>100</chance></li>
-					<li><defName>AptitudeTerrible_Medicine</defName><chance>100</chance></li>
-					<li><defName>AptitudeTerrible_Intellectual</defName><chance>100</chance></li>
-					<li><defName>AptitudePoor_Cooking</defName><chance>100</chance></li>
-					<li><defName>AptitudeRemarkable_Social</defName><chance>100</chance></li>
-					<li><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>WoundHealing_Slow</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>RobustDigestion</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Learning_Slow</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Sleepy</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Headbone_MiniHorns</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Melee</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Crafting</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeTerrible_Medicine</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeTerrible_Intellectual</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Cooking</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Social</defName><chance>100</chance></li>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>
 				</raceGenes>
 
 				<reproduction>
@@ -232,6 +232,7 @@
 				<canReproduceWithSelf>false</canReproduceWithSelf>
 			</raceRestriction>
 		</alienRace>
+		
 		<statBases>
 			<!--<MarketValue>1750</MarketValue>-->
 			<!--<Mass>50</Mass>-->
@@ -243,14 +244,15 @@
 			<!--<PainShockThreshold>0.7</PainShockThreshold>-->
 			<!--<ToxicEnvironmentResistance>0.65</ToxicEnvironmentResistance>-->
 			<EatingSpeed>2</EatingSpeed>
-			<!--<MeatAmount>35</MeatAmount>-->
-			<!--<LeatherAmount>30</LeatherAmount>-->
+			<MeatAmount>10</MeatAmount>
+			<LeatherAmount>10</LeatherAmount>
 			<!--<MeleeDodgeChance>1.15</MeleeDodgeChance>-->
 			<!--<NegotiationAbility>0.85</NegotiationAbility>-->
 		</statBases>
+		
 		<race>
 			<lifeExpectancy>300</lifeExpectancy>
-			<!--<leatherDef>Leather_Light</leatherDef>-->
+			<leatherDef>Leather_Light</leatherDef>
 			<body>PoroBody</body>
 			<!--<baseBodySize>0.8</baseBodySize>-->
 			<!--<gestationPeriodDays>14</gestationPeriodDays>-->
