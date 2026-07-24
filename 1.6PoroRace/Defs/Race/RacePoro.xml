@@ -66,37 +66,124 @@
 					<li><defName>AnimalWarcall</defName><chance>30</chance></li>
 				</abilities>
 
-
 				<alienPartGenerator>
-					<!--<headTypes Inherit="False">
-						<li>MyCustomHeadTypeDef</li>
-					</headTypes>-->
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!-- White 40-->
+									<li><weight>40</weight><only>RGB(250, 240, 240)</only></li>
+									<!-- Grey 23-->
+									<li><weight>11.5</weight><only>RGB(90, 90, 90)</only></li>
+									<li><weight>11.5</weight><only>RGB(200, 200, 200)</only></li>
+									<!-- Melanins 27-->
+									<li><weight>3</weight><only>RGB(242, 237, 224)</only></li>
+									<li><weight>3</weight><only>RGB(255, 239, 213)</only></li>
+									<li><weight>3</weight><only>RGB(255, 239, 201)</only></li>
+									<li><weight>3</weight><only>RGB(255, 239, 189)</only></li>
+									<li><weight>3</weight><only>RGB(249, 219, 165)</only></li>
+									<li><weight>3</weight><only>RGB(242, 199, 140)</only></li>
+									<li><weight>3</weight><only>RGB(228, 158, 90)</only></li>
+									<li><weight>3</weight><only>RGB(130, 91, 48)</only></li>
+									<li><weight>3</weight><only>RGB(99, 70, 36)</only></li>
+									<!--Colors 10-->
+									<li><weight>1</weight><only>RGB(169,182,108)</only></li>
+									<li><weight>1</weight><only>RGB(210, 114, 63)</only></li>
+									<li><weight>1</weight><only>RGB(204, 199, 65)</only></li>
+									<li><weight>1</weight><only>RGB(193, 165, 99)</only></li>
+									<li><weight>1</weight><only>RGB(150, 62, 62)</only></li>
+									<li><weight>1</weight><only>RGB(222, 106, 106)</only></li>
+									<li><weight>1</weight><only>RGB(97, 87, 195)</only></li>
+									<li><weight>1</weight><only>RGB(100, 165, 193)</only></li>
+									<li><weight>2</weight><only>RGB(55, 55, 55)</only></li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="AlienRace.ColorGenerator_CustomAlienChannel">
+								<colorChannel>skin_1</colorChannel>
+							</first>
+						</li>
+					</colorChannels>
+					
+					<headTypes Inherit="False">
+						<li>Poro_Head1</li>
+					</headTypes>
 					
 					<customDrawSize>(0.0, 0.0)</customDrawSize>
 					<customHeadDrawSize>(1.2, 1.2)</customHeadDrawSize>
 					<customPortraitDrawSize>(0.0, 0.0)</customPortraitDrawSize>
 					<customPortraitHeadDrawSize>(1.2, 1.2)</customPortraitHeadDrawSize>
-					<headOffset>(0.0, -0.5)</headOffset>
-					
-					<!--<headBodyPartDef>AlienHead</headBodyPartDef>  ???????-->
-
+					<headOffset>(0.0, -0.40)</headOffset>
 				</alienPartGenerator>
 
 				<raceGenes>
-					<li>
+					<!--<li>
 						<options>
-							<li><defName>Hair_LightTeal</defName></li>
-							<li><defName>Hair_Pink</defName></li>
-							<li><defName>Hair_SnowWhite</defName></li>
+							--><!-- 8 --><!--
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>	
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>
+							<li><defName>Skin_SlateGray</defName></li>
+							<li><defName>Skin_LightGray</defName></li>
+							<li><defName>Skin_SheerWhite</defName></li>	
+							--><!-- 1 --><!--
+							<li><defName>Skin_InkBlack</defName></li>
+							<li><defName>Skin_Blue</defName></li>
+							<li><defName>Skin_Purple</defName></li>
+							<li><defName>Skin_PaleRed</defName></li>
+							<li><defName>Skin_DeepRed</defName></li>
+							<li><defName>Skin_PaleYellow</defName></li>
+							<li><defName>Skin_DeepYellow</defName></li>
+							<li><defName>Skin_Orange</defName></li>
+							<li><defName>Skin_Green</defName></li>
+							--><!-- 2 --><!--
+							<li><defName>Skin_Melanin1</defName></li>
+							<li><defName>Skin_Melanin2</defName></li>
+							<li><defName>Skin_Melanin3</defName></li>
+							<li><defName>Skin_Melanin4</defName></li>
+							<li><defName>Skin_Melanin5</defName></li>
+							<li><defName>Skin_Melanin6</defName></li>
+							<li><defName>Skin_Melanin7</defName></li>
+							<li><defName>Skin_Melanin8</defName></li>
+							<li><defName>Skin_Melanin9</defName></li>
+							<li><defName>Skin_Melanin1</defName></li>
+							<li><defName>Skin_Melanin2</defName></li>
+							<li><defName>Skin_Melanin3</defName></li>
+							<li><defName>Skin_Melanin4</defName></li>
+							<li><defName>Skin_Melanin5</defName></li>
+							<li><defName>Skin_Melanin6</defName></li>
+							<li><defName>Skin_Melanin7</defName></li>
+							<li><defName>Skin_Melanin8</defName></li>
+							<li><defName>Skin_Melanin9</defName></li>
 						</options>
 						<count>1</count>
 						<chance>100</chance>
-					</li>
+					</li>-->
 					<li><defName>WoundHealing_Slow</defName><chance>100</chance></li>
 					<li><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
 					<li><defName>RobustDigestion</defName><chance>100</chance></li>
 					<li><defName>Learning_Slow</defName><chance>100</chance></li>
-					<li><defName>Furskin</defName><chance>100</chance></li>
 					<li><defName>Sleepy</defName><chance>100</chance></li>
 					<li><defName>Headbone_MiniHorns</defName><chance>100</chance></li>
 					<li><defName>AptitudePoor_Melee</defName><chance>100</chance></li>
@@ -132,10 +219,10 @@
 			</relationSettings>
 
 			<raceRestriction>
-				<blackApparelList>
-					<!--<li>Apparel_Tuque</li> all body armor-->
-				</blackApparelList>
-
+				<blackGeneTags>
+					<li>HairColor</li>
+					<li>SkinColor</li>
+				</blackGeneTags>
 				<onlyReproduceWithRestrictedRaces>false</onlyReproduceWithRestrictedRaces>
 				<reproductionList>
 				</reproductionList>
