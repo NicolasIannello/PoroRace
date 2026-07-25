@@ -73,7 +73,7 @@
 					<offset>(0, 0, 0)</offset>
 				</dataNorth>
 				<dataEast>
-					<offset>(0, 0, 0)</offset>
+					<offset>(-0.01, 0, 0)</offset>
 				</dataEast>
 			</drawData>
 		</apparel>
