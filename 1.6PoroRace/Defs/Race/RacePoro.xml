@@ -119,7 +119,7 @@
 					<headOffset>(0.0, -0.40)</headOffset>
 				</alienPartGenerator>
 
-				<raceGenes>
+				<!--<raceGenes>-->
 					<!--<li>
 						<options>
 							--><!-- 8 --><!--
@@ -180,7 +180,7 @@
 						<count>1</count>
 						<chance>100</chance>
 					</li>-->
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>WoundHealing_Slow</defName><chance>100</chance></li>
+					<!--<li MayRequire="Ludeon.RimWorld.Biotech"><defName>WoundHealing_Slow</defName><chance>100</chance></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>RobustDigestion</defName><chance>100</chance></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Learning_Slow</defName><chance>100</chance></li>
@@ -192,8 +192,8 @@
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeTerrible_Intellectual</defName><chance>100</chance></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Cooking</defName><chance>100</chance></li>
 					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Social</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>
-				</raceGenes>
+					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>-->
+				<!--</raceGenes>-->
 
 				<reproduction>
 					<gestatingGender>Either</gestatingGender>
