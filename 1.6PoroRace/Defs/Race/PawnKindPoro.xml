@@ -6,11 +6,14 @@
 		<label>poro colonist</label>
 		<race>Poro</race>
 		<defaultFactionType>PlayerColony</defaultFactionType>
-
+		<xenotypeSet>
+			<xenotypeChances>
+				<Poro_XenoType MayRequire="Ludeon.RimWorld.Biotech">1</Poro_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
 		<initialResistanceRange>4~10</initialResistanceRange>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-
 	</PawnKindDef>
 
 </Defs>

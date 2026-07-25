@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Poro_XenoType</defName>
+		<label>poro</label>
+		<description>poro</description>
+		<descriptionShort>poro</descriptionShort>
+		<iconPath>Xenotypes/PoroIcon</iconPath>
+		<inheritable>true</inheritable>
+		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<genes>
+			<!--<li>Gene_PoroBody</li>-->
+
+			<!--<li>AnimalWarcall</li>-->
+			
+			<li>WoundHealing_Slow</li>
+			<li>MeleeDamage_Weak</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Sleepy</li>
+			<li>Headbone_MiniHorns</li>
+			<li>AptitudePoor_Melee</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudeRemarkable_Social</li>
+			<li>AptitudeRemarkable_Animals</li>
+		</genes>
+	</XenotypeDef>
+</Defs>
