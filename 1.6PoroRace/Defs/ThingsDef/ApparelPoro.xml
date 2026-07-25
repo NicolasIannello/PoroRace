@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>Poro_Bucket_Armor</defName>
+		<label>Poro bucket armor</label>
+		<description>A heavy, protective bucket of armor forged from metal.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<recipeUsers>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<defaultIngredientFilter>
+				<stuffCategoriesToAllow>
+					<li>Metallic</li>
+				</stuffCategoriesToAllow>
+			</defaultIngredientFilter>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>40</costStuffCount>
+		<graphicData>
+			<texPath>Apparel/Poro_Bucket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>12</Mass>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.40</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>PoroTorso</li>
+				<li>PoroNeck</li>
+				<li>PoroShoulders</li>
+				<li>PoroArms</li>
+				<li>PoroLegs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Poro_Bucket</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+
+			<drawData>
+				<defaultData>
+					<offset>(0, 0, 0)</offset>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, 0)</offset>
+				</dataNorth>
+				<dataEast>
+					<offset>(0, 0, 0)</offset>
+				</dataEast>
+			</drawData>
+		</apparel>
+
+	</ThingDef>
+
+</Defs>
