@@ -111,6 +111,11 @@
 					<headTypes Inherit="False">
 						<li>Poro_Head1</li>
 					</headTypes>
+					<bodyTypes>
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Thin</li>
+					</bodyTypes>
 					
 					<customDrawSize>(1,1)</customDrawSize>
 					<customPortraitDrawSize>(1,1)</customPortraitDrawSize>
@@ -134,6 +139,10 @@
 						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Poro/Body/Poro_Body</Baby>
 					</bodytypeGraphics>
 				</body>
+				<apparel>
+					<bodyTypeFallback>Thin</bodyTypeFallback>
+					<femaleBodyTypeFallback>Thin</femaleBodyTypeFallback>
+				</apparel>
 			</graphicPaths>
 
 			<thoughtSettings>
