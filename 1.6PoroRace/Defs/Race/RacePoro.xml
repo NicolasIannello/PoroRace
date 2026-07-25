@@ -112,94 +112,29 @@
 						<li>Poro_Head1</li>
 					</headTypes>
 					
-					<customDrawSize>(0.0, 0.0)</customDrawSize>
-					<customHeadDrawSize>(1.2, 1.2)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.0, 0.0)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(1.2, 1.2)</customPortraitHeadDrawSize>
-					<headOffset>(0.0, -0.40)</headOffset>
+					<customDrawSize>(1,1)</customDrawSize>
+					<customPortraitDrawSize>(1,1)</customPortraitDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(1.0, 1.0)</customPortraitHeadDrawSize>
+					<headOffset>(0.0, -0.35)</headOffset>
 				</alienPartGenerator>
-
-				<!--<raceGenes>-->
-					<!--<li>
-						<options>
-							--><!-- 8 --><!--
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>	
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>
-							<li><defName>Skin_SlateGray</defName></li>
-							<li><defName>Skin_LightGray</defName></li>
-							<li><defName>Skin_SheerWhite</defName></li>	
-							--><!-- 1 --><!--
-							<li><defName>Skin_InkBlack</defName></li>
-							<li><defName>Skin_Blue</defName></li>
-							<li><defName>Skin_Purple</defName></li>
-							<li><defName>Skin_PaleRed</defName></li>
-							<li><defName>Skin_DeepRed</defName></li>
-							<li><defName>Skin_PaleYellow</defName></li>
-							<li><defName>Skin_DeepYellow</defName></li>
-							<li><defName>Skin_Orange</defName></li>
-							<li><defName>Skin_Green</defName></li>
-							--><!-- 2 --><!--
-							<li><defName>Skin_Melanin1</defName></li>
-							<li><defName>Skin_Melanin2</defName></li>
-							<li><defName>Skin_Melanin3</defName></li>
-							<li><defName>Skin_Melanin4</defName></li>
-							<li><defName>Skin_Melanin5</defName></li>
-							<li><defName>Skin_Melanin6</defName></li>
-							<li><defName>Skin_Melanin7</defName></li>
-							<li><defName>Skin_Melanin8</defName></li>
-							<li><defName>Skin_Melanin9</defName></li>
-							<li><defName>Skin_Melanin1</defName></li>
-							<li><defName>Skin_Melanin2</defName></li>
-							<li><defName>Skin_Melanin3</defName></li>
-							<li><defName>Skin_Melanin4</defName></li>
-							<li><defName>Skin_Melanin5</defName></li>
-							<li><defName>Skin_Melanin6</defName></li>
-							<li><defName>Skin_Melanin7</defName></li>
-							<li><defName>Skin_Melanin8</defName></li>
-							<li><defName>Skin_Melanin9</defName></li>
-						</options>
-						<count>1</count>
-						<chance>100</chance>
-					</li>-->
-					<!--<li MayRequire="Ludeon.RimWorld.Biotech"><defName>WoundHealing_Slow</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>MeleeDamage_Weak</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>RobustDigestion</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Learning_Slow</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Sleepy</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>Headbone_MiniHorns</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Melee</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Crafting</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeTerrible_Medicine</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeTerrible_Intellectual</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudePoor_Cooking</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Social</defName><chance>100</chance></li>
-					<li MayRequire="Ludeon.RimWorld.Biotech"><defName>AptitudeRemarkable_Animals</defName><chance>100</chance></li>-->
-				<!--</raceGenes>-->
 
 				<reproduction>
 					<gestatingGender>Either</gestatingGender>
 				</reproduction>
 				
 			</generalSettings>
+
+			<graphicPaths>
+				<body>
+					<path>Things/Poro/Body/Poro_Body</path>
+					<bodytypeGraphics>
+						<Thin>Things/Poro/Body/Poro_Body</Thin>
+						<Child MayRequire="Ludeon.RimWorld.Biotech">Things/Poro/Body/Poro_Body</Child>
+						<Baby MayRequire="Ludeon.RimWorld.Biotech">Things/Poro/Body/Poro_Body</Baby>
+					</bodytypeGraphics>
+				</body>
+			</graphicPaths>
 
 			<thoughtSettings>
 				<cannotReceiveThoughts>
