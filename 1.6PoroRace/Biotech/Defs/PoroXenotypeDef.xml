@@ -7,12 +7,12 @@
 		<descriptionShort>poro</descriptionShort>
 		<iconPath>Xenotypes/PoroIcon</iconPath>
 		<inheritable>true</inheritable>
+		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
-			<!--<li>Gene_PoroBody</li>-->
+			<li>Gene_PoroBody</li>
 
-			<!--<li>AnimalWarcall</li>-->
-			
+			<li>AnimalWarcall</li>
 			<li>WoundHealing_Slow</li>
 			<li>MeleeDamage_Weak</li>
 			<li>RobustDigestion</li>
@@ -28,4 +28,27 @@
 			<li>AptitudeRemarkable_Animals</li>
 		</genes>
 	</XenotypeDef>
+
+	<GeneDef>
+		<defName>Gene_PoroBody</defName>
+		<label>Gene_PoroBody</label>
+		<labelShortAdj>Gene_PoroBody</labelShortAdj>
+		<description>Gene_PoroBody.</description>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>400</displayOrderInCategory>
+		<iconPath>Xenotypes/PoroIcon</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Poro_Head1</li>
+		</forcedHeadTypes>
+		<statOffsets>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+		</statOffsets>
+		<geneClass>PoroRace.Gene_PoroBody</geneClass>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+	</GeneDef>
+
 </Defs>
