@@ -4,11 +4,11 @@
 	<PawnKindDef Name="PoroPawnKind" ParentName="BasePlayerPawnKind">
 		<defName>PoroColonist</defName>
 		<label>poro colonist</label>
-		<race>Poro</race>
+		<race>Human</race>
 		<defaultFactionType>PlayerColony</defaultFactionType>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Poro_XenoType MayRequire="Ludeon.RimWorld.Biotech">1</Poro_XenoType>
+				<Poro_XenoType>1</Poro_XenoType>
 			</xenotypeChances>
 		</xenotypeSet>
 		<initialResistanceRange>4~10</initialResistanceRange>
