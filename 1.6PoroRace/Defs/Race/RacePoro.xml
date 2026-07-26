@@ -197,7 +197,7 @@
 		<race>
 			<lifeExpectancy>300</lifeExpectancy>
 			<leatherDef>Leather_Light</leatherDef>
-			<body>PoroBody</body>
+			<body>PoroBodyDef</body>
 			<!--<baseBodySize>0.8</baseBodySize>-->
 			<!--<gestationPeriodDays>14</gestationPeriodDays>-->
 			<!--<litterSizeCurve Inherit="False">

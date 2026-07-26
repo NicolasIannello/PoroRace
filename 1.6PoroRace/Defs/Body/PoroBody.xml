@@ -32,7 +32,7 @@
 	</BodyPartGroupDef>
 
 	<BodyDef>
-		<defName>PoroBody</defName>
+		<defName>PoroBodyDef</defName>
 		<label>Poro body</label>
 		<corePart>
 			<def>Torso</def>
