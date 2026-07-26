@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DrugBase">
+		<defName>Poro_Porosnack</defName>
+		<label>porosnack</label>
+		<description>porosnack desc.</description>
+		<graphicData>
+			<texPath>Things/Consumables/PoroSnack</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>4</MarketValue>
+			<Mass>0.15</Mass>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.6</Nutrition>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<tickerType>Rare</tickerType>
+		<stackLimit>10</stackLimit>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+			<optimalityOffsetHumanlikes>5</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>5</optimalityOffsetFeedingAnimals>
+			<ingestSound>Meal_Eat</ingestSound>
+			<chairSearchRadius>4</chairSearchRadius>
+			<tableDesired>true</tableDesired>
+			<foodType>VegetableOrFruit</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.5</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<allowedArchonexusCount>40</allowedArchonexusCount>
+		<smallVolume>true</smallVolume>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Poro_Recipe_Porosnack</defName>
+		<label>make Porosnack</label>
+		<description>Make Porosnack.</description>
+		<jobString>Making Porosnack.</jobString>
+		<workAmount>450</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<researchPrerequisites>
+			<li>Cocoa</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs><li>Luciferium</li></thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs><li>Chocolate</li></thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs><li>Hay</li></thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Poro_Porosnack>1</Poro_Porosnack>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs><li>Luciferium</li></thingDefs>
+			<thingDefs><li>Chocolate</li></thingDefs>
+			<thingDefs><li>Hay</li></thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs><li>Luciferium</li></thingDefs>
+			<thingDefs><li>Chocolate</li></thingDefs>
+			<thingDefs><li>Hay</li></thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>420</displayPriority>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Poro_Recipe_PorosnackBulk</defName>
+		<label>make porosnack x4</label>
+		<description>Make bulk.</description>
+		<jobString>Making bulk porosnack.</jobString>
+		<workAmount>1200</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<researchPrerequisites>
+			<li>Cocoa</li>
+		</researchPrerequisites>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs><li>Luciferium</li></thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs><li>Chocolate</li></thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs><li>Hay</li></thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Poro_Porosnack>4</Poro_Porosnack>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs><li>Luciferium</li></thingDefs>
+			<thingDefs><li>Chocolate</li></thingDefs>
+			<thingDefs><li>Hay</li></thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs><li>Luciferium</li></thingDefs>
+			<thingDefs><li>Chocolate</li></thingDefs>
+			<thingDefs><li>Hay</li></thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+		<displayPriority>425</displayPriority>
+	</RecipeDef>
+</Defs>
