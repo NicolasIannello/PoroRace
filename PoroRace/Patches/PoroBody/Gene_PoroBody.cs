@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace PoroRace.Patches.PoroApparel
+namespace PoroRace
 {
     public class Gene_PoroBody : Gene
     {
