@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--<HeadTypeDef Name="PoroBase" ParentName="AverageBase" Abstract="True">
+	<HeadTypeDef Name="PoroBase" ParentName="AverageBase" Abstract="True">
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
-		--><!--<requiredGenes>
-			<li>Furskin</li>
-		</requiredGenes>--><!--
-		--><!--<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>--><!--
-	</HeadTypeDef>-->
+		<requiredGenes>
+			<li>Gene_PoroBody</li>
+		</requiredGenes>
+		<!--<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>-->
+	</HeadTypeDef>
 
-	<HeadTypeDef ParentName="AverageBase">
-	<!--<HeadTypeDef ParentName="FurskinAverageBase">-->
+	<HeadTypeDef ParentName="PoroBase">
 		<defName>Poro_Head1</defName>
 		<graphicPath>Things/Poro/Head/Poro_Head1</graphicPath>
 		<gender>None</gender>
