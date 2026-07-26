@@ -47,11 +47,11 @@
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-				<li>PoroTorso</li>
-				<li>PoroNeck</li>
-				<li>PoroShoulders</li>
-				<li>PoroArms</li>
-				<li>PoroLegs</li>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Poro_Bucket</wornGraphicPath>
 			<layers>
@@ -73,7 +73,7 @@
 					<offset>(0, 0, 0)</offset>
 				</dataNorth>
 				<dataEast>
-					<offset>(-0.01, 0, 0)</offset>
+					<offset>(0, 0, 0)</offset>
 				</dataEast>
 			</drawData>
 		</apparel>
