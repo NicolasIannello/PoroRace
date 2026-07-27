@@ -11,7 +11,7 @@
 
 	<HeadTypeDef ParentName="PoroBase">
 		<defName>Poro_Head1</defName>
-		<graphicPath>Things/Poro/Head/Poro_Head1</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 </Defs>

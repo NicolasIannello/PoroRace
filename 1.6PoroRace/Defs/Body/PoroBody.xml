@@ -2,10 +2,10 @@
 <Defs>
 
 	<BodyTypeDef>
-		<defName>PoroBodyTypeDef</defName>
-		<label>custom body</label>
-		<bodyNakedGraphicPath>Things/Poro/Body/Poro_Body</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Poro/Body/Poro_Body</bodyDessicatedGraphicPath>
+		<defName>Poro_Body</defName>
+		<label>poro</label>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Poro</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Poro</bodyDessicatedGraphicPath>
 		<bodyGraphicScale>(1, 1)</bodyGraphicScale>
 		<headOffset>(0, 0)</headOffset>
 	</BodyTypeDef>
