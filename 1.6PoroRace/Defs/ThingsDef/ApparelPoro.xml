@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<ThingCategoryDef>
+		<defName>Poro_Category_Armor</defName>
+		<label>Poro armor</label>
+		<parent>ApparelArmor</parent>
+	  </ThingCategoryDef>
 	
 	<ThingDef ParentName="ArmorMachineableBase">
 		<defName>Poro_Bucket_Armor</defName>
@@ -43,7 +48,7 @@
 			<MoveSpeed>-0.40</MoveSpeed>
 		</equippedStatOffsets>
 		<thingCategories>
-			<li>ApparelArmor</li>
+			<li>Poro_Category_Armor</li>
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
@@ -59,7 +64,8 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>IndustrialMilitaryBasic</li>
+				<li>PoroApparel</li>
+				<li>PoroArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
@@ -73,7 +79,7 @@
 					<offset>(0, 0, 0)</offset>
 				</dataNorth>
 				<dataEast>
-					<offset>(0, 0, 0)</offset>
+					<offset>(0.02, 0, 0)</offset>
 				</dataEast>
 			</drawData>
 		</apparel>
