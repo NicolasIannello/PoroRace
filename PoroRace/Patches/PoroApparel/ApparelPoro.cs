@@ -13,37 +13,28 @@ namespace PoroRace
         {
             if (!__result) return;
 
-            if (ShouldPreventWearing(thing.def, pawn, out string reason))
+            if(thing.def?.apparel != null && pawn.genes !=null)
             {
-                __result = false;
-                cantReason = reason;
+                GeneDef poroGene = DefDatabase<GeneDef>.GetNamedSilentFail("Gene_PoroBody");
+                var layers = thing.def.apparel.layers;
+                if (poroGene != null && layers != null && thing.def.apparel.tags != null) 
+                {
+                    bool poroApparel = thing.def.apparel.tags.Contains("PoroApparel");
+                    bool headOrBelt = layers.Contains(ApparelLayerDefOf.Overhead) || layers.Contains(ApparelLayerDefOf.Belt) || layers.Contains(ApparelLayerDefOf.EyeCover);
+                    bool torsoOrLegs = layers.Contains(ApparelLayerDefOf.Middle) || layers.Contains(ApparelLayerDefOf.OnSkin) || layers.Contains(ApparelLayerDefOf.Shell);
+                    bool isPoro = pawn.genes.HasActiveGene(poroGene);
+                    if (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)) )
+                    {
+                        cantReason = "Poro cannot wear this.";
+                        __result = false;
+                    }
+                    else if(!isPoro && poroApparel)
+                    {
+                        cantReason = "Cannot wear Poro apparel.";
+                        __result = false;
+                    }
+                }
             }
-        }
-
-        private static bool ShouldPreventWearing(ThingDef thingDef, Pawn pawn, out string reason)
-        {
-            reason = null;
-
-            if (thingDef?.apparel == null) return false;
-            if (pawn.genes == null) return false;
-            GeneDef poroGene = DefDatabase<GeneDef>.GetNamedSilentFail("Gene_PoroBody");
-            if (poroGene == null) return false;
-
-            bool isPoro = pawn.genes.HasActiveGene(poroGene);
-            bool isHatOrBelt = (thingDef.apparel.layers != null &&
-                (thingDef.apparel.layers.Contains(ApparelLayerDefOf.Overhead) || thingDef.apparel.layers.Contains(ApparelLayerDefOf.Belt)));
-
-            if (isHatOrBelt) return false;
-
-            bool isPoroClothing = thingDef.apparel.tags != null && thingDef.apparel.tags.Contains("PoroApparel");
-
-            if ((isPoro && !isPoroClothing) || (!isPoro && isPoroClothing))
-            {
-                reason = "Incompatible body type for this apparel.";
-                return true;
-            }
-
-            return false;
         }
     }
 }
