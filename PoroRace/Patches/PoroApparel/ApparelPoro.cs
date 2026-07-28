@@ -43,7 +43,6 @@ namespace PoroRace
     {
         public static void Postfix(Pawn pawn, Apparel ap, ref float __result)
         {
-            Log.Message("hola");
             if (ap.def?.apparel != null && pawn.genes != null)
             {
                 GeneDef poroGene = DefDatabase<GeneDef>.GetNamedSilentFail("Gene_PoroBody");
