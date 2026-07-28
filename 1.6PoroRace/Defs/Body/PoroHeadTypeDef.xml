@@ -6,7 +6,7 @@
 		<requiredGenes>
 			<li>Gene_PoroBody</li>
 		</requiredGenes>
-		<!--<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>-->
+		<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
