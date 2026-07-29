@@ -47,8 +47,11 @@ namespace PoroRace
         {
             base.PostRemove();
 
-            Log.Message("PostRemove: "+pawn.story.bodyType);
-            pawn.story.bodyType = null;
+            if (pawn.story != null) pawn.story.bodyType = pawn.story.Adulthood.BodyTypeFor(pawn.gender);
+            if (pawn.story == null) pawn.story.bodyType = pawn.gender == Gender.Female ? BodyTypeDefOf.Female : BodyTypeDefOf.Male;
+
+            pawn.Drawer?.renderer?.SetAllGraphicsDirty();
+            pawn.Drawer?.renderer?.renderTree?.SetDirty();
         }
 
         public override void Notify_IngestedThing(Thing thing, int numTaken)
