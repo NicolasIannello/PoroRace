@@ -14,6 +14,8 @@
 			<li>Hair_SnowWhite</li>
 
 			<li>AnimalWarcall</li>
+			<li>VoiceRoar</li>
+			<li>Delicate</li>
 			<li>Sterile</li>
 			<li>WoundHealing_Slow</li>
 			<li>MeleeDamage_Weak</li>
@@ -33,8 +35,8 @@
 
 	<GeneDef>
 		<defName>Gene_PoroBody</defName>
-		<label>Gene_PoroBody</label>
-		<labelShortAdj>Gene_PoroBody</labelShortAdj>
+		<label>Poro</label>
+		<labelShortAdj>Poro</labelShortAdj>
 		<description>Gene_PoroBody.</description>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>0</biostatMet>
@@ -45,9 +47,28 @@
 		<forcedHeadTypes>
 			<li>Poro_Head1</li>
 		</forcedHeadTypes>
+		<exclusionTags>
+			<li>BodyType</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<forcedTraits>
+			<li><def>Asexual</def></li>
+		</forcedTraits>
+		<suppressedTraits>
+			<!--<li><def>Bloodlust</def></li>-->
+			<li><def>Psychopath</def></li>
+			<li><def>Recluse</def></li>
+			<li>
+				<def>NaturalMood</def>
+				<degree>2</degree>
+			</li>
+		</suppressedTraits>
 		<statOffsets>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 		</statOffsets>
+		<statFactors>
+			<EatingSpeed>2.5</EatingSpeed>
+		</statFactors>
 		<geneClass>PoroRace.Gene_PoroBody</geneClass>
 		<skinIsHairColor>true</skinIsHairColor>
 		<tattoosVisible>false</tattoosVisible>
