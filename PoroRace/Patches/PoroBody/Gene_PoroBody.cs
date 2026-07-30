@@ -58,7 +58,22 @@ namespace PoroRace
         {
             base.Notify_IngestedThing(thing, numTaken);
 
+            if (thing.def.defName == "Poro_Porosnack")
+            {
+                HediffDef hediffDef = DefDatabase<HediffDef>.GetNamedSilentFail("Porosnack_Hediff");
+                if (hediffDef == null) return;
 
+                Hediff existingHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
+                if (existingHediff != null)
+                {
+                    existingHediff.Severity += (0.33f * numTaken);
+                }
+                else
+                {
+                    Hediff newHediff = pawn.health.AddHediff(hediffDef);
+                    newHediff.Severity = (0.40f * numTaken);
+                }
+            }
         }
 
     }
@@ -97,5 +112,10 @@ namespace PoroRace
 
             if (isPoro && (!__instance.layers.Contains(ApparelLayerDefOf.Overhead) && !__instance.tags.Contains("PoroApparel"))) __result = false;
         }
+    }
+
+    public class Hediff_Porosnack : HediffWithComps
+    {
+        public override string SeverityLabel => this.Severity.ToStringPercent();
     }
 }
