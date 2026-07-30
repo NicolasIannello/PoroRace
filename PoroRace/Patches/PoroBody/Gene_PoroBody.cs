@@ -60,18 +60,50 @@ namespace PoroRace
 
             if (thing.def.defName == "Poro_Porosnack")
             {
-                HediffDef hediffDef = DefDatabase<HediffDef>.GetNamedSilentFail("Porosnack_Hediff");
-                if (hediffDef == null) return;
+                HediffDef Porosnack_Hediff = DefDatabase<HediffDef>.GetNamedSilentFail("Porosnack_Hediff");
+                HediffDef PorosnackRecovery_Hediff = DefDatabase<HediffDef>.GetNamedSilentFail("PorosnackRecovery_Hediff");
 
-                Hediff existingHediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
-                if (existingHediff != null)
+                Hediff existingPorosnack_Hediff = pawn.health.hediffSet.GetFirstHediffOfDef(Porosnack_Hediff);
+                Hediff existingPorosnackRecovery_Hediff = pawn.health.hediffSet.GetFirstHediffOfDef(PorosnackRecovery_Hediff);
+
+                if (existingPorosnackRecovery_Hediff == null && pawn.ageTracker.AgeBiologicalYears>=13)
                 {
-                    existingHediff.Severity += (0.33f * numTaken);
-                }
-                else
-                {
-                    Hediff newHediff = pawn.health.AddHediff(hediffDef);
-                    newHediff.Severity = (0.40f * numTaken);
+                    if (existingPorosnack_Hediff != null)
+                    {
+                        existingPorosnack_Hediff.Severity += (0.33f * numTaken);
+
+                        if (existingPorosnack_Hediff.Severity >= 1.0f && pawn.Spawned)
+                        {
+                            Map map = pawn.Map;
+                            IntVec3 pos = pawn.Position;
+
+                            GenExplosion.DoExplosion(
+                                center: pos, map: map, radius: 1.9f, damType: DamageDefOf.Extinguish, instigator: pawn, damAmount: -1, armorPenetration: -1f,
+                                explosionSound: null, weapon: null, projectile: null, intendedTarget: null, postExplosionSpawnThingDef: ThingDefOf.Filth_FireFoam,
+                                postExplosionSpawnChance: 1f, postExplosionSpawnThingCount: 1
+                            );
+
+                            PawnKindDef poroKind = DefDatabase<PawnKindDef>.GetNamedSilentFail("PoroColonist");
+                            int spawnCount = Rand.RangeInclusive(1, 3);
+                            for (int i = 0; i < spawnCount; i++)
+                            {
+                                Pawn pawnGen = PawnGenerator.GeneratePawn(new PawnGenerationRequest(
+                                    poroKind, faction: pawn.Faction, forceGenerateNewPawn: true, allowDowned: false, allowPregnant: false, forceNoGear: true,
+                                    dontGiveWeapon: true, allowFood: false, certainlyBeenInCryptosleep: false, fixedBiologicalAge: 3.1f, fixedChronologicalAge: 3.1f
+                                ));
+
+                                GenSpawn.Spawn(pawnGen, pos, map);
+                            }
+
+                            pawn.health.RemoveHediff(existingPorosnack_Hediff);
+                            pawn.health.AddHediff(PorosnackRecovery_Hediff);
+                        }
+                    }
+                    else
+                    {
+                        Hediff newHediff = pawn.health.AddHediff(Porosnack_Hediff);
+                        newHediff.Severity = (0.40f * numTaken);
+                    }
                 }
             }
         }
