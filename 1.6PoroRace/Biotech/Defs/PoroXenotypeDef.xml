@@ -44,6 +44,7 @@
 		<displayOrderInCategory>400</displayOrderInCategory>
 		<iconPath>Xenotypes/PoroIcon</iconPath>
 		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
 		<forcedHeadTypes>
 			<li>Poro_Head1</li>
 		</forcedHeadTypes>
