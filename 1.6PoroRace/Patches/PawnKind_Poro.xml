@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="WildMan"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<Poro_XenoType>0.15</Poro_XenoType>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[defName="WildMan"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+						<Poro_XenoType>0.3</Poro_XenoType>
+					</xenotypeChances>
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+</Patch>
