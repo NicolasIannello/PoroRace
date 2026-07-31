@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="AncientsBase">
+		<pawnSingular>poro</pawnSingular>
+		<pawnsPlural>poros</pawnsPlural>
+		<categoryTag>Poro</categoryTag>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>2000</configurationListOrderPriority>
+		<displayInFactionSelection>true</displayInFactionSelection>
+		<fixedName>Poros</fixedName>
+		<canGenerateQuestSites>false</canGenerateQuestSites>
+		<techLevel>Spacer</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<hidden>true</hidden>
+		<rescueesCanJoin>true</rescueesCanJoin>
+		<autoFlee>false</autoFlee>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+				<li>Hyperweave</li>
+				<li>Plasteel</li>
+				<li>DevilstrandCloth</li>
+				<li>Uranium</li>
+				<li>Steel</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(100,100)</li>
+				<li>(10000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidsForbidden>false</raidsForbidden>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PlunderingPoro>1</PlunderingPoro>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<messageDefendersAttacking>Poros are attacking.</messageDefendersAttacking>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Poro_XenoType>999</Poro_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
+		<structureMemeWeights>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
+		</structureMemeWeights>
+	</FactionDef>
+
+	<FactionDef ParentName="AncientsBase">
+		<defName>WanderingPoros</defName>
+		<label>wandering poros</label>
+		<factionIconPath>Xenotypes/WanderingPoroIcon</factionIconPath>
+		<allowedCultures><li>Corunan</li></allowedCultures>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+		</requiredMemes>
+	</FactionDef>
+
+	<FactionDef ParentName="AncientsBase">
+		<defName>PlunderingPoros</defName>
+		<label>plundering poros</label>
+		<factionIconPath>Xenotypes/PlunderingPoroIcon</factionIconPath>
+		<allowedCultures><li>Kriminul</li></allowedCultures>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<permanentEnemy>true</permanentEnemy>
+	</FactionDef>
+</Defs>
