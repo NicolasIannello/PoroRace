@@ -19,4 +19,24 @@
 			</value>
 		</nomatch>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<Poro_XenoType>0.5</Poro_XenoType>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<Poro_XenoType>0.5</Poro_XenoType>
+			</value>
+		</match>
+	</Operation>
 </Patch>
