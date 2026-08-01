@@ -69,8 +69,11 @@
 		<defName>GuardPoro</defName>
 		<label>guard poro</label>
 		<defaultFactionDef>WanderingPoros</defaultFactionDef>
-		<apparelMoney>200~1000</apparelMoney>
+		<apparelMoney>0~1000</apparelMoney>
 		<weaponMoney>400~1000</weaponMoney>
+		<apparelRequired>
+			<li>Apparel_AdvancedHelmet</li>
+		</apparelRequired>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="WanderingPoro" ParentName="EnemyPoro">
