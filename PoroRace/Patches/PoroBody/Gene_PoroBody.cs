@@ -132,20 +132,6 @@ namespace PoroRace
         }
     }
 
-    [HarmonyPatch(typeof(ApparelProperties), nameof(ApparelProperties.PawnCanWear), typeof(Pawn), typeof(bool))]
-    public static class Patch_ApparelProperties_PawnCanWear
-    {
-        public static void Postfix(ApparelProperties __instance, Pawn pawn, ref bool __result)
-        {
-            if (!__result || pawn?.genes == null) return;
-
-            Gene_PoroBody poroGene = pawn.genes.GetFirstGeneOfType<Gene_PoroBody>();
-            bool isPoro = (poroGene != null && pawn.genes.HasActiveGene(poroGene.def));
-
-            if (isPoro && (!__instance.layers.Contains(ApparelLayerDefOf.Overhead) && !__instance.tags.Contains("PoroApparel"))) __result = false;
-        }
-    }
-
     public class Hediff_Porosnack : HediffWithComps
     {
         public override string SeverityLabel => this.Severity.ToStringPercent();
