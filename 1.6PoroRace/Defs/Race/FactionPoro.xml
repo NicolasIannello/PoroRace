@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="FactionBase" Abstract="True" Name="AncientsBase">
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="PorosBase">
 		<pawnSingular>poro</pawnSingular>
 		<pawnsPlural>poros</pawnsPlural>
 		<categoryTag>Poro</categoryTag>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
-		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>2000</configurationListOrderPriority>
 		<displayInFactionSelection>true</displayInFactionSelection>
 		<fixedName>Poros</fixedName>
 		<canGenerateQuestSites>false</canGenerateQuestSites>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -20,7 +21,6 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<hidden>true</hidden>
 		<rescueesCanJoin>true</rescueesCanJoin>
 		<autoFlee>false</autoFlee>
 		<apparelStuffFilter>
@@ -31,29 +31,25 @@
 				<li>DevilstrandCloth</li>
 				<li>Uranium</li>
 				<li>Steel</li>
+				<li>Cloth</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
-				<li>(100,100)</li>
-				<li>(10000,10000)</li>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<raidsForbidden>false</raidsForbidden>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 0)</li>
+				<li>(400, 1)</li>
 			</points>
 		</raidCommonalityFromPointsCurve>
-		<pawnGroupMakers>
-			<li>
-				<kindDef>Combat</kindDef>
-				<commonality>100</commonality>
-				<options>
-					<PlunderingPoro>1</PlunderingPoro>
-				</options>
-			</li>
-		</pawnGroupMakers>
 		<messageDefendersAttacking>Poros are attacking.</messageDefendersAttacking>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
@@ -63,13 +59,33 @@
 		<structureMemeWeights>
 			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">4</Structure_Animist>
 		</structureMemeWeights>
+		<arrivalModeWhitelist>
+			<li>EdgeWalkIn</li>
+		</arrivalModeWhitelist>
 	</FactionDef>
 
-	<FactionDef ParentName="AncientsBase">
+	<FactionDef ParentName="PorosBase">
 		<defName>WanderingPoros</defName>
 		<label>wandering poros</label>
+		<leaderTitle>poro king</leaderTitle>
+		<hidden>false</hidden>
+		<!--<classicIdeo>true</classicIdeo>-->
+		<fixedLeaderKinds>
+			<li>KingPoro</li>
+		</fixedLeaderKinds>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>10</configurationListOrderPriority>
 		<factionIconPath>Xenotypes/WanderingPoroIcon</factionIconPath>
-		<allowedCultures><li>Corunan</li></allowedCultures>
+		<settlementTexturePath>Xenotypes/WanderingPoroIcon</settlementTexturePath>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>Corunan</li>
+		</allowedCultures>
+		<structureMemeWeights>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
 		<allowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
@@ -78,13 +94,62 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<GuardPoro>1</GuardPoro>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<WanderingPoro>1</WanderingPoro>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<TraderPoro>1</TraderPoro>
+				</traders>
+				<carriers>
+					<Muffalo>5</Muffalo>
+					<!--<Bison>3</Bison>
+					<Yak>2</Yak>
+					<Mastodon MayRequire="Ludeon.RimWorld.Odyssey">3</Mastodon>-->
+				</carriers>
+				<guards>
+					<WanderingPoro>5</WanderingPoro>
+					<GuardPoro>10</GuardPoro>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<GuardPoro>30</GuardPoro>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<caravanTraderKinds>
+			<li>Caravan_Poro</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Caravan_Poro</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Caravan_Poro</li>
+		</baseTraderKinds>
 	</FactionDef>
 
-	<FactionDef ParentName="AncientsBase">
+	<FactionDef ParentName="PorosBase">
 		<defName>PlunderingPoros</defName>
 		<label>plundering poros</label>
+		<hidden>true</hidden>
 		<factionIconPath>Xenotypes/PlunderingPoroIcon</factionIconPath>
-		<allowedCultures><li>Kriminul</li></allowedCultures>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<allowedCultures>
+			<li>Kriminul</li>
+		</allowedCultures>
 		<allowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
@@ -94,5 +159,13 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
 		<permanentEnemy>true</permanentEnemy>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<PlunderingPoro>1</PlunderingPoro>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 </Defs>
