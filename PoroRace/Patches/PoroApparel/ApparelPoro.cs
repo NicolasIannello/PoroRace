@@ -5,7 +5,7 @@ using Verse;
 namespace PoroRace
 {
     [HarmonyPatch(typeof(EquipmentUtility), nameof(EquipmentUtility.CanEquip))]
-    [HarmonyPatch(new[] { typeof(Thing), typeof(Pawn), typeof(string), typeof(bool) }, 
+    [HarmonyPatch(new[] { typeof(Thing), typeof(Pawn), typeof(string), typeof(bool) },
         new[] { ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal })]
     public static class Patch_EquipmentUtility_CanEquip
     {
@@ -13,27 +13,9 @@ namespace PoroRace
         {
             if (!__result) return;
 
-            if(thing.def?.apparel != null && pawn.genes !=null)
+            if (thing.def?.apparel != null && pawn.genes != null)
             {
-                GeneDef poroGene = DefDatabase<GeneDef>.GetNamedSilentFail("Gene_PoroBody");
-                var layers = thing.def.apparel.layers;
-                if (poroGene != null && layers != null && thing.def.apparel.tags != null) 
-                {
-                    bool poroApparel = thing.def.apparel.tags.Contains("PoroApparel");
-                    bool headOrBelt = layers.Contains(ApparelLayerDefOf.Overhead) || layers.Contains(ApparelLayerDefOf.Belt) || layers.Contains(ApparelLayerDefOf.EyeCover);
-                    bool torsoOrLegs = layers.Contains(ApparelLayerDefOf.Middle) || layers.Contains(ApparelLayerDefOf.OnSkin) || layers.Contains(ApparelLayerDefOf.Shell);
-                    bool isPoro = pawn.genes.HasActiveGene(poroGene);
-                    if (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)) )
-                    {
-                        cantReason = "Poro cannot wear this.";
-                        __result = false;
-                    }
-                    else if(!isPoro && poroApparel)
-                    {
-                        cantReason = "Cannot wear Poro apparel.";
-                        __result = false;
-                    }
-                }
+                if (PoroApparelHelper.CanWearPoroApparel(thing.def.apparel, pawn, true, "CanEquip", ref cantReason)) __result = false;
             }
         }
     }
@@ -45,24 +27,56 @@ namespace PoroRace
         {
             if (ap.def?.apparel != null && pawn.genes != null)
             {
-                GeneDef poroGene = DefDatabase<GeneDef>.GetNamedSilentFail("Gene_PoroBody");
-                var layers = ap.def.apparel.layers;
-                if (poroGene != null && layers != null && ap.def.apparel.tags != null)
-                {
-                    bool poroApparel = ap.def.apparel.tags.Contains("PoroApparel");
-                    bool headOrBelt = layers.Contains(ApparelLayerDefOf.Overhead) || layers.Contains(ApparelLayerDefOf.Belt) || layers.Contains(ApparelLayerDefOf.EyeCover);
-                    bool torsoOrLegs = layers.Contains(ApparelLayerDefOf.Middle) || layers.Contains(ApparelLayerDefOf.OnSkin) || layers.Contains(ApparelLayerDefOf.Shell);
-                    bool isPoro = pawn.genes.HasActiveGene(poroGene);
-                    if (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)))
-                    {
-                        __result = -1000f;
-                    }
-                    else if (!isPoro && poroApparel)
-                    {
-                        __result = -1000f;
-                    }
-                }
+                if (PoroApparelHelper.CanWearPoroApparel(ap.def.apparel, pawn, true, "ScoreGain")) __result = -1000f;
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(ApparelProperties), nameof(ApparelProperties.PawnCanWear), typeof(Pawn), typeof(bool))]
+    public static class Patch_ApparelProperties_PawnCanWear
+    {
+        public static void Postfix(ApparelProperties __instance, Pawn pawn, ref bool __result)
+        {
+            if (!__result || pawn?.genes == null) return;
+
+            if(PoroApparelHelper.CanWearPoroApparel(__instance, pawn, false, "PawnCanWear")) __result = false;
+        }
+    }
+
+    public static class PoroApparelHelper
+    {
+        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, bool flag, string log)
+        {
+            string dummyReason = null;
+            return CanWearPoroApparel(apparel, pawn, flag, log, ref dummyReason);
+        }
+        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, bool flag, string log, ref string cantReason)
+        {
+            //Log.Message(log);
+
+            Gene_PoroBody poroGene = pawn.genes.GetFirstGeneOfType<Gene_PoroBody>();
+            bool isPoro = (poroGene != null && pawn.genes.HasActiveGene(poroGene.def));
+
+            var layers = apparel.layers;
+            bool poroApparel = apparel.tags.Contains("PoroApparel") || apparel.tags.Contains("PoroArmor");
+            bool headOrBelt = layers.Contains(ApparelLayerDefOf.Overhead) || layers.Contains(ApparelLayerDefOf.Belt) || layers.Contains(ApparelLayerDefOf.EyeCover);
+            bool torsoOrLegs = layers.Contains(ApparelLayerDefOf.Middle) || layers.Contains(ApparelLayerDefOf.OnSkin) || layers.Contains(ApparelLayerDefOf.Shell);
+
+            cantReason= null;
+            if(!flag) return (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)));
+
+            if (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)))
+            {
+                cantReason = "Poro cannot wear this.";
+                return true;
+            }
+            else if(!isPoro && poroApparel)
+            {
+                cantReason = "Cannot wear Poro apparel.";
+                return true;
+            }
+
+            return false;
         }
     }
 }
