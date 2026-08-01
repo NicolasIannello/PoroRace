@@ -69,7 +69,7 @@
 		<defName>GuardPoro</defName>
 		<label>guard poro</label>
 		<defaultFactionDef>WanderingPoros</defaultFactionDef>
-		<apparelMoney>200~1200</apparelMoney>
+		<apparelMoney>200~1000</apparelMoney>
 		<weaponMoney>400~1000</weaponMoney>
 	</PawnKindDef>
 	
@@ -113,6 +113,18 @@
 		<label>trader poro</label>
 		<defaultFactionDef>WanderingPoros</defaultFactionDef>
 		<trader>true</trader>
+		<weaponMoney>400~600</weaponMoney>
+		<apparelMoney>600~800</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_BowlerHat</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="WanderingPoro">
+		<defName>KingPoro</defName>
+		<label>king poro</label>
+		<defaultFactionDef>WanderingPoros</defaultFactionDef>
+		<factionLeader>true</factionLeader>
 		<weaponMoney>400~600</weaponMoney>
 		<apparelMoney>600~800</apparelMoney>
 		<apparelRequired>
