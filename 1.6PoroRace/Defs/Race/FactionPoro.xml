@@ -5,9 +5,11 @@
 		<pawnSingular>poro</pawnSingular>
 		<pawnsPlural>poros</pawnsPlural>
 		<categoryTag>Poro</categoryTag>
+		<hidden>true</hidden>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>2000</configurationListOrderPriority>
 		<displayInFactionSelection>true</displayInFactionSelection>
 		<fixedName>Poros</fixedName>
@@ -68,13 +70,10 @@
 		<defName>WanderingPoros</defName>
 		<label>wandering poros</label>
 		<leaderTitle>poro king</leaderTitle>
-		<hidden>false</hidden>
 		<!--<classicIdeo>true</classicIdeo>-->
 		<fixedLeaderKinds>
 			<li>KingPoro</li>
 		</fixedLeaderKinds>
-		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>10</configurationListOrderPriority>
 		<factionIconPath>Xenotypes/WanderingPoroIcon</factionIconPath>
 		<settlementTexturePath>Xenotypes/WanderingPoroIcon</settlementTexturePath>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
@@ -114,21 +113,21 @@
 				</traders>
 				<carriers>
 					<Muffalo>5</Muffalo>
-					<!--<Bison>3</Bison>
+					<Bison>3</Bison>
 					<Yak>2</Yak>
-					<Mastodon MayRequire="Ludeon.RimWorld.Odyssey">3</Mastodon>-->
+					<Mastodon MayRequire="Ludeon.RimWorld.Odyssey">3</Mastodon>
 				</carriers>
 				<guards>
 					<WanderingPoro>5</WanderingPoro>
-					<GuardPoro>10</GuardPoro>
+					<GuardPoro>7</GuardPoro>
 				</guards>
 			</li>
-			<li>
+			<!--<li>
 				<kindDef>Settlement</kindDef>
 				<options>
 					<GuardPoro>30</GuardPoro>
 				</options>
-			</li>
+			</li>-->
 		</pawnGroupMakers>
 		<caravanTraderKinds>
 			<li>Caravan_Poro</li>
@@ -136,17 +135,15 @@
 		<visitorTraderKinds>
 			<li>Caravan_Poro</li>
 		</visitorTraderKinds>
-		<baseTraderKinds>
+		<!--<baseTraderKinds>
 			<li>Caravan_Poro</li>
-		</baseTraderKinds>
+		</baseTraderKinds>-->
 	</FactionDef>
 
 	<FactionDef ParentName="PorosBase">
 		<defName>PlunderingPoros</defName>
 		<label>plundering poros</label>
-		<hidden>true</hidden>
 		<factionIconPath>Xenotypes/PlunderingPoroIcon</factionIconPath>
-		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<allowedCultures>
 			<li>Kriminul</li>
 		</allowedCultures>
