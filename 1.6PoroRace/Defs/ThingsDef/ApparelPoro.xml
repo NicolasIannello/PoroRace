@@ -90,6 +90,9 @@
 				</dataEast>
 			</drawData>
 		</apparel>
+		<tradeTags>
+			<li>PoroArmor</li>
+		</tradeTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
@@ -157,6 +160,9 @@
 				</dataEast>
 			</drawData>
 		</apparel>
+		<tradeTags>
+			<li>PoroApparel</li>
+		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options">
 			<options>
 				<li>
