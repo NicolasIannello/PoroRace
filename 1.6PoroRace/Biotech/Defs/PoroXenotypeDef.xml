@@ -33,7 +33,38 @@
 		</genes>
 	</XenotypeDef>
 
-	<GeneDef>
+	<XenotypeDef>
+		<defName>FablePoro_XenoType</defName>
+		<label>fableporo</label>
+		<description>fableporo</description>
+		<descriptionShort>fableporo</descriptionShort>
+		<iconPath>Xenotypes/FablePoroIcon</iconPath>
+		<inheritable>false</inheritable>
+		<combatPowerFactor>1</combatPowerFactor>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<genes>
+			<li>Gene_FablePoroBody</li>
+			<li>Hair_SnowWhite</li>
+			<li>DiseaseFree</li>
+			<li>VoiceRoar</li>
+			<li>Sterile</li>
+			<li>WoundHealing_Slow</li>
+			<li>MeleeDamage_Strong</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Sleepy</li>
+			<li>Headbone_MiniHorns</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudeRemarkable_Construction</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeStrong_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeTerrible_Intellectual</li>
+			<li>AptitudePoor_Cooking</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef Name="Gene_PoroBody">
 		<defName>Gene_PoroBody</defName>
 		<label>Poro</label>
 		<labelShortAdj>Poro</labelShortAdj>
@@ -75,4 +106,29 @@
 		<tattoosVisible>false</tattoosVisible>
 	</GeneDef>
 
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Gene_FablePoroBody</defName>
+		<label>Fable Poro</label>
+		<labelShortAdj>Fable Poro</labelShortAdj>
+		<description>Gene_FablePoroBody.</description>
+		<iconPath>Xenotypes/FablePoroIcon</iconPath>
+		<biostatMet>+3</biostatMet>
+		<geneClass>Gene</geneClass>
+		<bodyType>Fat</bodyType>
+		<forcedHeadTypes>
+			<li>FablePoro_Head1</li>
+		</forcedHeadTypes>
+		<fur>Furskin</fur>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Hair</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
 </Defs>

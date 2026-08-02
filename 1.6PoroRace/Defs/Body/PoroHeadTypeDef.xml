@@ -3,14 +3,23 @@
 	<HeadTypeDef Name="PoroBase" ParentName="AverageBase" Abstract="True">
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
-		<requiredGenes>
-			<li>Gene_PoroBody</li>
-		</requiredGenes>
 		<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
 		<defName>Poro_Head1</defName>
+		<requiredGenes>
+			<li>Gene_PoroBody</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="PoroBase">
+		<defName>FablePoro_Head1</defName>
+		<requiredGenes>
+			<li>Gene_FablePoroBody</li>
+		</requiredGenes>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>

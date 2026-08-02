@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace PoroRace
@@ -21,5 +22,16 @@ namespace PoroRace
         }
   
     }
-    
+
+    [DefOf]
+    public static class PoroRaceDefOf
+    {
+        public static GeneDef Gene_FablePoroBody;
+
+        static PoroRaceDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(PoroRaceDefOf));
+        }
+    }
+
 }

@@ -18,6 +18,17 @@
 		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
 	</PawnKindDef>
 
+	<PawnKindDef Name="FablePoroPawnKind" ParentName="PoroPawnKind">
+		<defName>FablePoroColonist</defName>
+		<label>fable poro colonist</label>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<xenotypeSet>
+			<xenotypeChances>
+				<FablePoro_XenoType>1</FablePoro_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
 	<PawnKindDef Name="EnemyPoro" ParentName="PoroPawnKind">
 		<defName>PlunderingPoro</defName>
 		<label>plundering poro</label>

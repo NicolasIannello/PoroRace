@@ -6,6 +6,7 @@
 			<xpath>Defs/ThoughtDef[defName="Naked"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -16,6 +17,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -26,6 +28,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -36,6 +39,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -46,6 +50,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinOrChestUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -56,6 +61,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -66,6 +72,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinChestOrHairUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -76,6 +83,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinChestHairOrFaceUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -86,6 +94,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinChestHairOrFaceUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
@@ -96,6 +105,7 @@
 			<xpath>Defs/ThoughtDef[defName="GroinChestHairOrFaceUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
 			<value>
 				<li>Gene_PoroBody</li>
+				<li>Gene_FablePoroBody</li>
 			</value>
 		</match>
 	</Operation>
