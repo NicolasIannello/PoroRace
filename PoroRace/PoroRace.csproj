@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patches\PoroApparel\ApparelPoro.cs" />
+    <Compile Include="Patches\PoroBody\Gene_FablePoroBody.cs" />
     <Compile Include="PoroRaceMod.cs" />
     <Compile Include="Patches\PoroBody\Gene_PoroBody.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
