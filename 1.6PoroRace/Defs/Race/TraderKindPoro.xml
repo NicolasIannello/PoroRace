@@ -32,11 +32,11 @@
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Chocolate</thingDef>
-				<totalPriceRange>50~100</totalPriceRange>
+				<countRange>50~100</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Poro_Porosnack</thingDef>
-				<totalPriceRange>5~10</totalPriceRange>
+				<countRange>3~11</countRange>
 			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>Dye</thingDef>
@@ -48,7 +48,7 @@
 			<li Class="StockGenerator_Category">
 				<categoryDef>FoodRaw</categoryDef>
 				<thingDefCountRange>3~3</thingDefCountRange>
-				<totalPriceRange>150~600</totalPriceRange>
+				<totalPriceRange>300~1000</totalPriceRange>
 				<excludedCategories>
 					<li>MeatRaw</li>
 					<li>EggsFertilized</li>
