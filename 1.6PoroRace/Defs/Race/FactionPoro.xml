@@ -118,8 +118,8 @@
 					<Mastodon MayRequire="Ludeon.RimWorld.Odyssey">3</Mastodon>
 				</carriers>
 				<guards>
-					<WanderingPoro>5</WanderingPoro>
-					<GuardPoro>7</GuardPoro>
+					<WanderingPoro>10</WanderingPoro>
+					<GuardPoro>5</GuardPoro>
 				</guards>
 			</li>
 			<!--<li>
