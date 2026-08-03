@@ -21,10 +21,9 @@
 	<PawnKindDef Name="FablePoroPawnKind" ParentName="PoroPawnKind">
 		<defName>FablePoroColonist</defName>
 		<label>fable poro colonist</label>
-		<defaultFactionType>PlayerColony</defaultFactionType>
 		<xenotypeSet>
 			<xenotypeChances>
-				<FablePoro_XenoType>1</FablePoro_XenoType>
+				<FablePoro_XenoType>999</FablePoro_XenoType>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
