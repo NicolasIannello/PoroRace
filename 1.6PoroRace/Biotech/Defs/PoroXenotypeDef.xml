@@ -46,6 +46,7 @@
 			<li>Gene_FablePoroBody</li>
 			<li>Hair_SnowWhite</li>
 			<li>DiseaseFree</li>
+			<li>AnimalWarcall</li>
 			<li>VoiceRoar</li>
 			<li>Sterile</li>
 			<li>WoundHealing_Slow</li>
@@ -64,6 +65,8 @@
 		</genes>
 	</XenotypeDef>
 
+	<!-- GeneDefs -->
+	
 	<GeneDef Name="Gene_PoroBody">
 		<defName>Gene_PoroBody</defName>
 		<label>Poro</label>
@@ -87,7 +90,6 @@
 			<li><def>Asexual</def></li>
 		</forcedTraits>
 		<suppressedTraits>
-			<!--<li><def>Bloodlust</def></li>-->
 			<li><def>Psychopath</def></li>
 			<li><def>Recluse</def></li>
 			<li>
@@ -118,5 +120,12 @@
 		<forcedHeadTypes>
 			<li>FablePoro_Head1</li>
 		</forcedHeadTypes>
+		<customEffectDescriptions>
+			<li>+1 to crafting/building quality</li>
+		</customEffectDescriptions>
+		<statFactors>
+			<ConstructionSpeed>3</ConstructionSpeed>
+			<GeneralLaborSpeed>3</GeneralLaborSpeed>
+		</statFactors>
 	</GeneDef>
 </Defs>
