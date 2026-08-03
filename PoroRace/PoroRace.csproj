@@ -49,11 +49,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gen\PoroGen.cs" />
     <Compile Include="Patches\PoroApparel\ApparelPoro.cs" />
-    <Compile Include="Patches\PoroBody\Gene_FablePoroBody.cs" />
+    <Compile Include="Patches\PoroBody\FablePoro.cs" />
     <Compile Include="PoroRaceMod.cs" />
-    <Compile Include="Patches\PoroBody\Gene_PoroBody.cs" />
+    <Compile Include="Patches\PoroBody\Poro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Things\Porosnack.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony.Ref">

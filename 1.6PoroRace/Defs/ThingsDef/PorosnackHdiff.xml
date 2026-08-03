@@ -5,7 +5,7 @@
 		<defName>Porosnack_Hediff</defName>
 		<label>Porosnack buildup</label>
 		<description>Poro has eaten a porosnack.</description>
-		<hediffClass>PoroRace.Hediff_Porosnack</hediffClass>
+		<hediffClass>PoroRace.Things.Hediff_Porosnack</hediffClass>
 		<maxSeverity>1.0</maxSeverity>
 		<initialSeverity>0</initialSeverity>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>

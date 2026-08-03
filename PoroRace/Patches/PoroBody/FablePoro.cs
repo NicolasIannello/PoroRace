@@ -5,11 +5,6 @@ using Verse;
 
 namespace PoroRace
 {
-    public class Gene_FablePoroBody : Gene_PoroBody
-    {
-        readonly string body = "Naked_FablePoro";
-    }
-
     [HarmonyPatch(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef), typeof(bool) })]
     public static class GenerateQualityCreatedByPawn
     {
