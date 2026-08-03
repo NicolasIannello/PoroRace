@@ -6,7 +6,7 @@ using Verse;
 namespace PoroRace
 {
     [HarmonyPatch(typeof(QualityUtility), nameof(QualityUtility.GenerateQualityCreatedByPawn), new Type[] { typeof(Pawn), typeof(SkillDef), typeof(bool) })]
-    public static class GenerateQualityCreatedByPawn
+    public static class Patch_QualityUtility_GenerateQualityCreatedByPawn
     {
         public static void Postfix(Pawn pawn, SkillDef relevantSkill, bool consumeInspiration, ref QualityCategory __result)
         {

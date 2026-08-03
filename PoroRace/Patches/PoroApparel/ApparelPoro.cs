@@ -21,7 +21,7 @@ namespace PoroRace
     }
 
     [HarmonyPatch(typeof(JobGiver_OptimizeApparel), nameof(JobGiver_OptimizeApparel.ApparelScoreGain))]
-    public static class PreventAIArmorEquipPatch
+    public static class Patch_JobGiver_OptimizeApparel_ApparelScoreGain
     {
         public static void Postfix(Pawn pawn, Apparel ap, ref float __result)
         {
