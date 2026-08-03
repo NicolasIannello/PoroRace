@@ -54,10 +54,7 @@ namespace PoroRace
         {
             //Log.Message(log);
 
-            Gene_PoroBody poroGene = pawn.genes.GetFirstGeneOfType<Gene_PoroBody>();
-            Gene_FablePoroBody fablePoroGene = pawn.genes.GetFirstGeneOfType<Gene_FablePoroBody>();
-            bool isPoro = ((poroGene != null || fablePoroGene!=null) && (pawn.genes.HasActiveGene(poroGene.def) || pawn.genes.HasActiveGene(fablePoroGene.def)));
-
+            bool isPoro = (pawn.genes.HasActiveGene(PoroRaceDefOf.Gene_PoroBody) || pawn.genes.HasActiveGene(PoroRaceDefOf.Gene_FablePoroBody));
             var layers = apparel.layers;
             bool poroApparel = apparel.tags.Contains("PoroApparel") || apparel.tags.Contains("PoroArmor");
             bool headOrBelt = layers.Contains(ApparelLayerDefOf.Overhead) || layers.Contains(ApparelLayerDefOf.Belt) || layers.Contains(ApparelLayerDefOf.EyeCover);

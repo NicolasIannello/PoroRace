@@ -27,6 +27,7 @@ namespace PoroRace
     public static class PoroRaceDefOf
     {
         public static GeneDef Gene_FablePoroBody;
+        public static GeneDef Gene_PoroBody;
 
         static PoroRaceDefOf()
         {
