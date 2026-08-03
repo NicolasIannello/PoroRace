@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<BodyTypeDef>
+	<BodyTypeDef Name="Naked_Poro">
 		<defName>Naked_Poro</defName>
 		<label>poro</label>
 		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Poro</bodyNakedGraphicPath>
@@ -156,6 +156,13 @@
 				<debugColor>(0,0,0,1)</debugColor>
 			</li>
 		</woundAnchors>
+	</BodyTypeDef>
+
+	<BodyTypeDef ParentName="Naked_Poro">
+		<defName>Naked_FablePoro</defName>
+		<label>fable poro</label>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
 	
 </Defs>

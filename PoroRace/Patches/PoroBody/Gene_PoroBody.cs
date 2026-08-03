@@ -7,13 +7,14 @@ namespace PoroRace
 {
     public class Gene_PoroBody : Gene
     {
+        readonly string body = "Naked_Poro";
         public override void PostAdd()
         {
             base.PostAdd();
 
             if (pawn.story != null && Active)
             {
-                BodyTypeDef poroBody = DefDatabase<BodyTypeDef>.GetNamedSilentFail("Naked_Poro");
+                BodyTypeDef poroBody = DefDatabase<BodyTypeDef>.GetNamedSilentFail(body);
                 if (poroBody != null)
                 {
                     if (pawn.apparel != null)
@@ -122,6 +123,14 @@ namespace PoroRace
             if (pawn.story.bodyType.defName == "Naked_Poro")
             {
                 string path = "Things/Pawn/Humanlike/Bodies/Naked_Poro";
+
+                __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
+
+                return false;
+            } 
+            else if (pawn.story.bodyType.defName == "Naked_FablePoro") 
+            {
+                string path = "Things/Pawn/Humanlike/Bodies/Naked_FablePoro";
 
                 __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
 

@@ -20,7 +20,7 @@
 		<requiredGenes>
 			<li>Gene_FablePoroBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FablePoro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 </Defs>

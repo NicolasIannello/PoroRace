@@ -94,6 +94,7 @@
 				<def>NaturalMood</def>
 				<degree>2</degree>
 			</li>
+			<li><def>Bisexual</def></li>
 		</suppressedTraits>
 		<statOffsets>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -113,22 +114,9 @@
 		<description>Gene_FablePoroBody.</description>
 		<iconPath>Xenotypes/FablePoroIcon</iconPath>
 		<biostatMet>+3</biostatMet>
-		<geneClass>Gene</geneClass>
-		<bodyType>Fat</bodyType>
+		<geneClass>PoroRace.Gene_FablePoroBody</geneClass>
 		<forcedHeadTypes>
 			<li>FablePoro_Head1</li>
 		</forcedHeadTypes>
-		<fur>Furskin</fur>
-		<renderNodeProperties>
-			<li>
-				<debugLabel>Fur</debugLabel>
-				<nodeClass>PawnRenderNode_Fur</nodeClass>
-				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-				<baseLayer>5</baseLayer>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<colorType>Hair</colorType>
-				<parentTagDef>Body</parentTagDef>
-			</li>
-		</renderNodeProperties>
 	</GeneDef>
 </Defs>
