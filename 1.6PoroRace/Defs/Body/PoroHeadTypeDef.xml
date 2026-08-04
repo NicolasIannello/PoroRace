@@ -10,6 +10,14 @@
 		<defName>Poro_Head1</defName>
 		<requiredGenes>
 			<li>Gene_PoroBody</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="PoroBase">
+		<defName>Porofly_Head1</defName>
+		<requiredGenes>
 			<li>Porofly_wings</li>
 		</requiredGenes>
 		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>

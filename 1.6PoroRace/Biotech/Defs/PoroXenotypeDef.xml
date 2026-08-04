@@ -167,6 +167,9 @@
 		<displayCategory>Cosmetic</displayCategory>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>-5</biostatMet>
+		<forcedHeadTypes>
+			<li>Porofly_Head1</li>
+		</forcedHeadTypes>
 		<statFactors>
 			<MedicalTendQuality>3</MedicalTendQuality>
 			<MedicalTendSpeed>5</MedicalTendSpeed>
