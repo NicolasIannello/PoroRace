@@ -45,6 +45,7 @@ namespace PoroRace
                 SkillDef learnedSkill = __instance.Props.skill;
 
                 if (learnedSkill == SkillDefOf.Construction || learnedSkill == SkillDefOf.Crafting) EvolvePoro(user, user.skills.GetSkill(__instance.Props.skill).GetLevel(), PoroRaceDefOf.FablePoro_XenoType);
+                if (learnedSkill == SkillDefOf.Medicine) EvolvePoro(user, user.skills.GetSkill(__instance.Props.skill).GetLevel(), PoroRaceDefOf.Porofly_XenoType);
             }
         }
 

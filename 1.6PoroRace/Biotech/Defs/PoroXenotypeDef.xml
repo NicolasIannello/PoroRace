@@ -65,6 +65,37 @@
 		</genes>
 	</XenotypeDef>
 
+	<XenotypeDef>
+		<defName>Porofly_XenoType</defName>
+		<label>porofly</label>
+		<description>porofly</description>
+		<descriptionShort>porofly</descriptionShort>
+		<iconPath>Xenotypes/PoroflyIcon</iconPath>
+		<inheritable>false</inheritable>
+		<combatPowerFactor>0.5</combatPowerFactor>
+		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<genes>
+			<li>Gene_PoroBody</li>
+			<li>Hair_Blonde</li>
+			<li>DiseaseFree</li>
+			<li>VoiceRoar</li>
+			<li>Delicate</li>
+			<li>Sterile</li>
+			<li>WoundHealing_Fast</li>
+			<li>MeleeDamage_Weak</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Sleepy</li>
+			<li>Porofly_wings</li>
+			<li>AptitudePoor_Melee</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeRemarkable_Medicine</li>
+			<li>AptitudePoor_Intellectual</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudeStrong_Animals</li>
+		</genes>
+	</XenotypeDef>
+	
 	<!-- GeneDefs -->
 	
 	<GeneDef Name="Gene_PoroBody">
@@ -127,5 +158,36 @@
 			<ConstructionSpeed>3</ConstructionSpeed>
 			<GeneralLaborSpeed>3</GeneralLaborSpeed>
 		</statFactors>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Porofly_wings</defName>
+		<label>porofly wings</label>
+		<description>porofly wings.</description>
+		<iconPath>Xenotypes/PoroflyIcon</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-5</biostatMet>
+		<statFactors>
+			<MedicalTendQuality>3</MedicalTendQuality>
+			<MedicalTendSpeed>5</MedicalTendSpeed>
+		</statFactors>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/Attachments/PoroflyWing/Porofly_wing</texPath>
+				<colorType>Custom</colorType>
+				<parentTagDef>Body</parentTagDef>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<drawData>
+					<defaultData>
+						<layer>10</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>60</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 </Defs>
