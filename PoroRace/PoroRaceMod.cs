@@ -28,6 +28,7 @@ namespace PoroRace
     {
         public static GeneDef Gene_FablePoroBody;
         public static GeneDef Gene_PoroBody;
+        public static GeneDef Porofly_wings;
         public static XenotypeDef FablePoro_XenoType;
         public static XenotypeDef Porofly_XenoType;
 

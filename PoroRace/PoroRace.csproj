@@ -47,15 +47,25 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gen\PoroGen.cs" />
     <Compile Include="Patches\PoroApparel\ApparelPoro.cs" />
     <Compile Include="Patches\PoroBody\FablePoro.cs" />
+    <Compile Include="Patches\PoroBody\Porofly.cs" />
     <Compile Include="PoroRaceMod.cs" />
     <Compile Include="Patches\PoroBody\Poro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Things\Porosnack.cs" />
+    <Compile Include="UI\PoroflyShieldGizmo.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony.Ref">

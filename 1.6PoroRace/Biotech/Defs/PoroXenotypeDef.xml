@@ -171,7 +171,13 @@
 		<statFactors>
 			<MedicalTendQuality>3</MedicalTendQuality>
 			<MedicalTendSpeed>5</MedicalTendSpeed>
+			<MoveSpeed>2.5</MoveSpeed>
 		</statFactors>
+		<geneClass>PoroRace.Gene_PoroflyBody</geneClass>
+		<customEffectDescriptions>
+			<li>Grants a spellshield</li>
+			<li>Ignores difficult terrain</li>
+		</customEffectDescriptions>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
