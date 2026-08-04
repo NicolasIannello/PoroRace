@@ -75,7 +75,6 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
-			<li>Gene_PoroBody</li>
 			<li>Hair_Blonde</li>
 			<li>DiseaseFree</li>
 			<li>VoiceRoar</li>
@@ -142,8 +141,8 @@
 
 	<GeneDef ParentName="Gene_PoroBody">
 		<defName>Gene_FablePoroBody</defName>
-		<label>Fable Poro</label>
-		<labelShortAdj>Fable Poro</labelShortAdj>
+		<label>Fabled Poro</label>
+		<labelShortAdj>Fabled Poro</labelShortAdj>
 		<description>Gene_FablePoroBody.</description>
 		<iconPath>Xenotypes/FablePoroIcon</iconPath>
 		<biostatMet>+3</biostatMet>
@@ -152,7 +151,7 @@
 			<li>FablePoro_Head1</li>
 		</forcedHeadTypes>
 		<customEffectDescriptions>
-			<li>+1 to crafting/building quality</li>
+			<li>+1 to crafting/building/art quality</li>
 		</customEffectDescriptions>
 		<statFactors>
 			<ConstructionSpeed>3</ConstructionSpeed>
@@ -160,7 +159,7 @@
 		</statFactors>
 	</GeneDef>
 
-	<GeneDef>
+	<GeneDef ParentName="Gene_PoroBody">
 		<defName>Porofly_wings</defName>
 		<label>porofly wings</label>
 		<description>porofly wings.</description>
