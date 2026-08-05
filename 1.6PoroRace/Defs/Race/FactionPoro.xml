@@ -70,15 +70,10 @@
 		<defName>WanderingPoros</defName>
 		<label>wandering poros</label>
 		<leaderTitle>poro king</leaderTitle>
-		<!--<classicIdeo>true</classicIdeo>-->
 		<fixedLeaderKinds>
 			<li>KingPoro</li>
 		</fixedLeaderKinds>
 		<factionIconPath>Xenotypes/WanderingPoroIcon</factionIconPath>
-		<settlementTexturePath>Xenotypes/WanderingPoroIcon</settlementTexturePath>
-		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<factionNameMaker>NamerFactionTribal</factionNameMaker>
-		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
 		<allowedCultures>
 			<li>Corunan</li>
 		</allowedCultures>
@@ -93,6 +88,12 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
+		<disallowedPrecepts>
+			<li>Slavery_Classic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+		</disallowedPrecepts>
 		<pawnGroupMakers>
 			<li>
 				<kindDef>Combat</kindDef>
@@ -150,10 +151,12 @@
 		<allowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</allowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
 		<permanentEnemy>true</permanentEnemy>
 		<pawnGroupMakers>
