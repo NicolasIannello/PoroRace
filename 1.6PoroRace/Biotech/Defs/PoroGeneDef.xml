@@ -78,8 +78,8 @@
 
 	<GeneDef ParentName="Gene_PoroBody">
 		<defName>Porofly_wings</defName>
-		<label>Porofly</label>
-		<labelShortAdj>Porofly</labelShortAdj>
+		<label>Porofly wings</label>
+		<labelShortAdj>Porofly wings</labelShortAdj>
 		<description>In space, no one can hear you squee.</description>
 		<iconPath>Xenotypes/PoroflyIcon</iconPath>
 		<displayCategory>Miscellaneous</displayCategory>
@@ -103,6 +103,7 @@
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
 				<texPath>Things/Pawn/Humanlike/Attachments/PoroflyWing/Porofly_wing</texPath>
 				<colorType>Custom</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<parentTagDef>Body</parentTagDef>
 				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
 				<drawData>
@@ -111,6 +112,33 @@
 					</defaultData>
 					<dataNorth>
 						<layer>60</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>Porofly_antenna</defName>
+		<label>Porofly antenna</label>
+		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<iconPath>Xenotypes/PoroflyAntennaIcon</iconPath>
+		<displayCategory>Cosmetic</displayCategory>
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPath>Things/Pawn/Humanlike/Attachments/PoroflyAntenna/Porofly_antenna</texPath>
+				<colorType>Hair</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<!--<color>(255, 255, 255)</color>-->
+				<parentTagDef>Head</parentTagDef>
+				<drawData>
+					<defaultData>
+						<layer>80</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>10</layer>
 					</dataNorth>
 				</drawData>
 			</li>
