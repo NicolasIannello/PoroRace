@@ -121,7 +121,7 @@
 	<GeneDef>
 		<defName>Porofly_antenna</defName>
 		<label>Porofly antenna</label>
-		<description>Carriers of this gene grow two small horns protruding from the forehead.</description>
+		<description>Carriers of this gene grow two small antennas protruding from the forehead.</description>
 		<iconPath>Xenotypes/PoroflyAntennaIcon</iconPath>
 		<displayCategory>Cosmetic</displayCategory>
 		<renderNodeProperties>
