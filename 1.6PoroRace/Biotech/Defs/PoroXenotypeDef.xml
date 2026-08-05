@@ -2,7 +2,7 @@
 <Defs>
 	<XenotypeDef>
 		<defName>Poro_XenoType</defName>
-		<label>poro</label>
+		<label>Poro</label>
 		<description>Poros are mysterious, magical, creatures. A poro's horns perk up when it's excited and droop down when it's scared. Poros stick their tongue out because they are incredibly warm. This is why they can survive harsh cold environments.</description>
 		<descriptionShort>Poros are mysterious, magical, and much-loved creatures.</descriptionShort>
 		<iconPath>Xenotypes/PoroIcon</iconPath>
@@ -10,32 +10,36 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
-			<li>Gene_PoroBody</li>
-			<li>Hair_SnowWhite</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
-			<li>VoiceRoar</li>
-			<li>Delicate</li>
-			<li>Sterile</li>
+			<li>Immunity_Strong</li>
 			<li>WoundHealing_Slow</li>
+			<li>Mood_Sanguine</li>
 			<li>MeleeDamage_Weak</li>
+			<li>KindInstinct</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>Pain_Extra</li>
+			<li>Sterile</li>
+			<li>Headbone_MiniHorns</li>
+			<li>VoiceRoar</li>
+			<li>Gene_PoroBody</li>
+			<li>Hair_SnowWhite</li>
 			<li>RobustDigestion</li>
 			<li>Learning_Slow</li>
-			<li>Sleepy</li>
-			<li>Headbone_MiniHorns</li>
-			<li>AptitudePoor_Melee</li>
-			<li>AptitudePoor_Crafting</li>
-			<li>AptitudeTerrible_Medicine</li>
-			<li>AptitudeTerrible_Intellectual</li>
-			<li>AptitudePoor_Cooking</li>
-			<li>AptitudeRemarkable_Social</li>
+			<li>Gene_PoroMetabolism</li>
+			<li>AptitudePoor_Construction</li>
 			<li>AptitudeRemarkable_Animals</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudeStrong_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
 		</genes>
 	</XenotypeDef>
 
 	<XenotypeDef>
 		<defName>FablePoro_XenoType</defName>
-		<label>fabled poro</label>
+		<label>Fabled poro</label>
 		<description>There is one figure said to be legendary to all porokind. It is said that, as he travels, he bestows his deserving furry friends with all manner of magical forged gifts.</description>
 		<descriptionShort>There is one figure said to be legendary to all porokind. It is said that, as he travels, he bestows his deserving furry friends with all manner of magical forged gifts.</descriptionShort>
 		<iconPath>Xenotypes/FablePoroIcon</iconPath>
@@ -43,31 +47,32 @@
 		<combatPowerFactor>1</combatPowerFactor>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
-			<li>Gene_FablePoroBody</li>
-			<li>Hair_SnowWhite</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
-			<li>VoiceRoar</li>
-			<li>Sterile</li>
+			<li>Immunity_Strong</li>
 			<li>WoundHealing_Slow</li>
-			<li>MeleeDamage_Strong</li>
+			<li>Mood_Optimist</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>Sterile</li>
+			<li>Headbone_MiniHorns</li>
+			<li>VoiceRoar</li>
+			<li>Gene_FablePoroBody</li>
+			<li>Hair_SnowWhite</li>
 			<li>RobustDigestion</li>
 			<li>Learning_Slow</li>
-			<li>Sleepy</li>
-			<li>Headbone_MiniHorns</li>
-			<li>AptitudeRemarkable_Crafting</li>
+			<li>Gene_PoroMetabolism</li>
 			<li>AptitudeRemarkable_Construction</li>
-			<li>AptitudeStrong_Animals</li>
 			<li>AptitudeStrong_Artistic</li>
-			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudePoor_Medicine</li>
 			<li>AptitudeTerrible_Intellectual</li>
-			<li>AptitudePoor_Cooking</li>
 		</genes>
 	</XenotypeDef>
 
 	<XenotypeDef>
 		<defName>Porofly_XenoType</defName>
-		<label>porofly</label>
+		<label>Porofly</label>
 		<description>Every flap is powered by equal parts sparkly stars and poro enthusiasm</description>
 		<descriptionShort>Every flap is powered by equal parts sparkly stars and poro enthusiasm</descriptionShort>
 		<iconPath>Xenotypes/PoroflyIcon</iconPath>
@@ -75,128 +80,28 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
-			<li>Hair_Blonde</li>
 			<li>DiseaseFree</li>
-			<li>VoiceRoar</li>
+			<li>PerfectImmunity</li>
+			<li>AnimalWarcall</li>
+			<li>Mood_Optimist</li>
+			<li>ToxResist_Total</li>
+			<li>MeleeDamage_Weak</li>
+			<li>KindInstinct</li>
+			<li>Sleepy</li>
 			<li>Delicate</li>
 			<li>Sterile</li>
-			<li>WoundHealing_Fast</li>
-			<li>MeleeDamage_Weak</li>
+			<li>Porofly_wings</li>
+			<li>VoiceRoar</li>
+			<li>Hair_Blonde</li>
 			<li>RobustDigestion</li>
 			<li>Learning_Slow</li>
-			<li>Sleepy</li>
-			<li>Porofly_wings</li>
+			<li>Gene_PoroMetabolism</li>
 			<li>AptitudePoor_Melee</li>
+			<li>AptitudePoor_Construction</li>
 			<li>AptitudePoor_Crafting</li>
 			<li>AptitudeRemarkable_Medicine</li>
-			<li>AptitudePoor_Intellectual</li>
-			<li>AptitudePoor_Cooking</li>
-			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeTerrible_Intellectual</li>
 		</genes>
 	</XenotypeDef>
 	
-	<!-- GeneDefs -->
-	
-	<GeneDef Name="Gene_PoroBody">
-		<defName>Gene_PoroBody</defName>
-		<label>Poro</label>
-		<labelShortAdj>Poro</labelShortAdj>
-		<description>They have a heart-shaped underbelly because they're made of love.</description>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>0</biostatMet>
-		<displayCategory>Miscellaneous</displayCategory>
-		<displayOrderInCategory>400</displayOrderInCategory>
-		<iconPath>Xenotypes/PoroIcon</iconPath>
-		<iconColor>(0.75, 0.75, 0.75)</iconColor>
-		<missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
-		<forcedHeadTypes>
-			<li>Poro_Head1</li>
-		</forcedHeadTypes>
-		<exclusionTags>
-			<li>BodyType</li>
-			<li>Fur</li>
-		</exclusionTags>
-		<forcedTraits>
-			<li><def>Asexual</def></li>
-		</forcedTraits>
-		<suppressedTraits>
-			<li><def>Psychopath</def></li>
-			<li><def>Recluse</def></li>
-			<li>
-				<def>NaturalMood</def>
-				<degree>2</degree>
-			</li>
-			<li><def>Bisexual</def></li>
-		</suppressedTraits>
-		<statOffsets>
-			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
-		</statOffsets>
-		<statFactors>
-			<EatingSpeed>2.5</EatingSpeed>
-		</statFactors>
-		<geneClass>PoroRace.Gene_PoroBody</geneClass>
-		<skinIsHairColor>true</skinIsHairColor>
-		<tattoosVisible>false</tattoosVisible>
-	</GeneDef>
-
-	<GeneDef ParentName="Gene_PoroBody">
-		<defName>Gene_FablePoroBody</defName>
-		<label>Fabled Poro</label>
-		<labelShortAdj>Fabled Poro</labelShortAdj>
-		<description>bestowed with magical forging.</description>
-		<iconPath>Xenotypes/FablePoroIcon</iconPath>
-		<biostatMet>+3</biostatMet>
-		<geneClass>PoroRace.Gene_FablePoroBody</geneClass>
-		<forcedHeadTypes>
-			<li>FablePoro_Head1</li>
-		</forcedHeadTypes>
-		<customEffectDescriptions>
-			<li>+1 to crafting/building/art quality</li>
-		</customEffectDescriptions>
-		<statFactors>
-			<ConstructionSpeed>3</ConstructionSpeed>
-			<GeneralLaborSpeed>3</GeneralLaborSpeed>
-		</statFactors>
-	</GeneDef>
-
-	<GeneDef ParentName="Gene_PoroBody">
-		<defName>Porofly_wings</defName>
-		<label>Porofly</label>
-		<labelShortAdj>Porofly</labelShortAdj>
-		<description>In space, no one can hear you squee.</description>
-		<iconPath>Xenotypes/PoroflyIcon</iconPath>
-		<displayCategory>Cosmetic</displayCategory>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>-5</biostatMet>
-		<forcedHeadTypes>
-			<li>Porofly_Head1</li>
-		</forcedHeadTypes>
-		<statFactors>
-			<MedicalTendQuality>3</MedicalTendQuality>
-			<MedicalTendSpeed>5</MedicalTendSpeed>
-			<MoveSpeed>2.5</MoveSpeed>
-		</statFactors>
-		<geneClass>PoroRace.Gene_PoroflyBody</geneClass>
-		<customEffectDescriptions>
-			<li>Grants a spellshield</li>
-			<li>Ignores difficult terrain</li>
-		</customEffectDescriptions>
-		<renderNodeProperties>
-			<li>
-				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/Humanlike/Attachments/PoroflyWing/Porofly_wing</texPath>
-				<colorType>Custom</colorType>
-				<parentTagDef>Body</parentTagDef>
-				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
-				<drawData>
-					<defaultData>
-						<layer>10</layer>
-					</defaultData>
-					<dataNorth>
-						<layer>60</layer>
-					</dataNorth>
-				</drawData>
-			</li>
-		</renderNodeProperties>
-	</GeneDef>
 </Defs>

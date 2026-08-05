@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>Gene_PoroMetabolism</defName>
+		<label>Poro metabolism</label>
+		<labelShortAdj>Poro metabolism</labelShortAdj>
+		<description>The metabolism of poros.</description>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<iconPath>Xenotypes/PoroMetabolismIcon</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>5</biostatMet>
+		<missingGeneRomanceChanceFactor>0</missingGeneRomanceChanceFactor>
+		<forcedTraits>
+			<li><def>Asexual</def></li>
+		</forcedTraits>
+		<suppressedTraits>
+			<li><def>Psychopath</def></li>
+			<li><def>Recluse</def></li>
+			<li>
+				<def>NaturalMood</def>
+				<degree>2</degree>
+			</li>
+			<li><def>Bisexual</def></li>
+		</suppressedTraits>
+		<statOffsets>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+		</statOffsets>
+		<statFactors>
+			<EatingSpeed>2.5</EatingSpeed>
+		</statFactors>
+	</GeneDef>
+
+	<GeneDef Name="Gene_PoroBody">
+		<defName>Gene_PoroBody</defName>
+		<label>Poro body</label>
+		<labelShortAdj>Poro body</labelShortAdj>
+		<description>They have a heart-shaped underbelly because they're made of love.</description>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<displayCategory>Cosmetic_Body</displayCategory>
+		<displayOrderInCategory>100</displayOrderInCategory>
+		<iconPath>Xenotypes/PoroIcon</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<forcedHeadTypes>
+			<li>Poro_Head1</li>
+		</forcedHeadTypes>
+		<exclusionTags>
+			<li>BodyType</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<geneClass>PoroRace.Gene_PoroBody</geneClass>
+		<skinIsHairColor>true</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+	</GeneDef>
+
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Gene_FablePoroBody</defName>
+		<label>Fabled Poro</label>
+		<labelShortAdj>Fabled Poro</labelShortAdj>
+		<description>Bestowed with magical forging.</description>
+		<iconPath>Xenotypes/FablePoroIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatMet>-4</biostatMet>
+		<geneClass>PoroRace.Gene_FablePoroBody</geneClass>
+		<forcedHeadTypes>
+			<li>FablePoro_Head1</li>
+		</forcedHeadTypes>
+		<customEffectDescriptions>
+			<li>+1 to crafting/building/art quality</li>
+		</customEffectDescriptions>
+		<statFactors>
+			<ConstructionSpeed>3</ConstructionSpeed>
+			<GeneralLaborSpeed>3</GeneralLaborSpeed>
+		</statFactors>
+	</GeneDef>
+
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Porofly_wings</defName>
+		<label>Porofly</label>
+		<labelShortAdj>Porofly</labelShortAdj>
+		<description>In space, no one can hear you squee.</description>
+		<iconPath>Xenotypes/PoroflyIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>-5</biostatMet>
+		<forcedHeadTypes>
+			<li>Porofly_Head1</li>
+		</forcedHeadTypes>
+		<statFactors>
+			<MedicalTendQuality>3</MedicalTendQuality>
+			<MedicalTendSpeed>5</MedicalTendSpeed>
+			<MoveSpeed>2.5</MoveSpeed>
+		</statFactors>
+		<geneClass>PoroRace.Gene_PoroflyBody</geneClass>
+		<customEffectDescriptions>
+			<li>Grants a spellshield</li>
+			<li>Ignores difficult terrain</li>
+		</customEffectDescriptions>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/Attachments/PoroflyWing/Porofly_wing</texPath>
+				<colorType>Custom</colorType>
+				<parentTagDef>Body</parentTagDef>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<drawData>
+					<defaultData>
+						<layer>10</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>60</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+</Defs>
