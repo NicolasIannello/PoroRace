@@ -71,4 +71,14 @@ namespace PoroRace
             }
         }
     }
+
+    [HarmonyPatch(typeof(TraderCaravanUtility), nameof(TraderCaravanUtility.GetTraderCaravanRole))]
+    public static class Patch_TraderCaravanUtility_GetTraderCaravanRole
+    {
+        public static void Postfix(Pawn p, ref TraderCaravanRole __result)
+        {
+            if (p.kindDef.defName == "PoroSlave") __result = TraderCaravanRole.Chattel;
+        }
+    }
+
 }
