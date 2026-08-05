@@ -3,8 +3,8 @@
 	<XenotypeDef>
 		<defName>Poro_XenoType</defName>
 		<label>poro</label>
-		<description>poro</description>
-		<descriptionShort>poro</descriptionShort>
+		<description>Poros are mysterious, magical, creatures. A poro's horns perk up when it's excited and droop down when it's scared. Poros stick their tongue out because they are incredibly warm. This is why they can survive harsh cold environments.</description>
+		<descriptionShort>Poros are mysterious, magical, and much-loved creatures.</descriptionShort>
 		<iconPath>Xenotypes/PoroIcon</iconPath>
 		<inheritable>true</inheritable>
 		<combatPowerFactor>0.5</combatPowerFactor>
@@ -35,9 +35,9 @@
 
 	<XenotypeDef>
 		<defName>FablePoro_XenoType</defName>
-		<label>fableporo</label>
-		<description>fableporo</description>
-		<descriptionShort>fableporo</descriptionShort>
+		<label>fabled poro</label>
+		<description>There is one figure said to be legendary to all porokind. It is said that, as he travels, he bestows his deserving furry friends with all manner of magical forged gifts.</description>
+		<descriptionShort>There is one figure said to be legendary to all porokind. It is said that, as he travels, he bestows his deserving furry friends with all manner of magical forged gifts.</descriptionShort>
 		<iconPath>Xenotypes/FablePoroIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>1</combatPowerFactor>
@@ -68,8 +68,8 @@
 	<XenotypeDef>
 		<defName>Porofly_XenoType</defName>
 		<label>porofly</label>
-		<description>porofly</description>
-		<descriptionShort>porofly</descriptionShort>
+		<description>Every flap is powered by equal parts sparkly stars and poro enthusiasm</description>
+		<descriptionShort>Every flap is powered by equal parts sparkly stars and poro enthusiasm</descriptionShort>
 		<iconPath>Xenotypes/PoroflyIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>0.5</combatPowerFactor>
@@ -101,7 +101,7 @@
 		<defName>Gene_PoroBody</defName>
 		<label>Poro</label>
 		<labelShortAdj>Poro</labelShortAdj>
-		<description>Gene_PoroBody.</description>
+		<description>They have a heart-shaped underbelly because they're made of love.</description>
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>0</biostatMet>
 		<displayCategory>Miscellaneous</displayCategory>
@@ -143,7 +143,7 @@
 		<defName>Gene_FablePoroBody</defName>
 		<label>Fabled Poro</label>
 		<labelShortAdj>Fabled Poro</labelShortAdj>
-		<description>Gene_FablePoroBody.</description>
+		<description>bestowed with magical forging.</description>
 		<iconPath>Xenotypes/FablePoroIcon</iconPath>
 		<biostatMet>+3</biostatMet>
 		<geneClass>PoroRace.Gene_FablePoroBody</geneClass>
@@ -161,8 +161,9 @@
 
 	<GeneDef ParentName="Gene_PoroBody">
 		<defName>Porofly_wings</defName>
-		<label>porofly wings</label>
-		<description>porofly wings.</description>
+		<label>Porofly</label>
+		<labelShortAdj>Porofly</labelShortAdj>
+		<description>In space, no one can hear you squee.</description>
 		<iconPath>Xenotypes/PoroflyIcon</iconPath>
 		<displayCategory>Cosmetic</displayCategory>
 		<biostatCpx>0</biostatCpx>

@@ -3,8 +3,8 @@
 
 	<HediffDef>
 		<defName>Porosnack_Hediff</defName>
-		<label>Porosnack buildup</label>
-		<description>Poro has eaten a porosnack.</description>
+		<label>Porosnax buildup</label>
+		<description>Poro has eaten a porosnax.</description>
 		<hediffClass>PoroRace.Things.Hediff_Porosnack</hediffClass>
 		<maxSeverity>1.0</maxSeverity>
 		<initialSeverity>0</initialSeverity>
@@ -34,8 +34,8 @@
 	
 	<HediffDef>
 		<defName>PorosnackRecovery_Hediff</defName>
-		<label>Porosnack recovery</label>
-		<description>Porosnack recovery.</description>
+		<label>Porosnax recovery</label>
+		<description>recovering from too much porosnaxs.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<maxSeverity>1.0</maxSeverity>
 		<initialSeverity>1.0</initialSeverity>

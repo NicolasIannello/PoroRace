@@ -2,8 +2,8 @@
 <Defs>
 	<ThingDef ParentName="DrugBase">
 		<defName>Poro_Porosnack</defName>
-		<label>porosnack</label>
-		<description>porosnack desc.</description>
+		<label>porosnax</label>
+		<description>This savory blend of free-range, grass-fed Avarosan game hens and organic, non-ZMO Freljordian herbs contains the essential nutrients necessary to keep your Poro purring with pleasure.</description>
 		<graphicData>
 			<texPath>Things/Consumables/PoroSnack</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -47,9 +47,9 @@
 
 	<RecipeDef>
 		<defName>Poro_Recipe_Porosnack</defName>
-		<label>make Porosnack</label>
-		<description>Make Porosnack.</description>
-		<jobString>Making Porosnack.</jobString>
+		<label>make Porosnax</label>
+		<description>Make porosnax.</description>
+		<jobString>Making Porosnax.</jobString>
 		<workAmount>450</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
@@ -102,9 +102,9 @@
 
 	<RecipeDef>
 		<defName>Poro_Recipe_PorosnackBulk</defName>
-		<label>make porosnack x4</label>
-		<description>Make bulk.</description>
-		<jobString>Making bulk porosnack.</jobString>
+		<label>make porosnax x4</label>
+		<description>Make bulk porosnax.</description>
+		<jobString>Making bulk porosnax.</jobString>
 		<workAmount>1200</workAmount>
 		<workSpeedStat>CookSpeed</workSpeedStat>
 		<requiredGiverWorkType>Cooking</requiredGiverWorkType>

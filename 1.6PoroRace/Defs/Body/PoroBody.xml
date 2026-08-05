@@ -160,7 +160,7 @@
 
 	<BodyTypeDef ParentName="Naked_Poro">
 		<defName>Naked_FablePoro</defName>
-		<label>fable poro</label>
+		<label>fabled poro</label>
 		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
