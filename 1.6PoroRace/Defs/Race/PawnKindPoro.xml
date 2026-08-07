@@ -21,19 +21,42 @@
 	<PawnKindDef ParentName="SlaveBase">
 		<defName>PoroSlave</defName>
 		<apparelMoney>0~0</apparelMoney>
-		<xenotypeSet>
+		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<Poro_XenoType>999</Poro_XenoType>
 			</xenotypeChances>
 		</xenotypeSet>
+		<apparelRequired>
+			<li>Apparel_HatHood</li>
+		</apparelRequired>
 	</PawnKindDef>
 
 	<PawnKindDef Name="FablePoroPawnKind" ParentName="PoroPawnKind">
 		<defName>FablePoroColonist</defName>
 		<label>fabled poro colonist</label>
-		<xenotypeSet>
+		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<FablePoro_XenoType>999</FablePoro_XenoType>
+				<FablePoro_XenoType>1</FablePoro_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PoroPawnKind">
+		<defName>PoroflyColonist</defName>
+		<label>porofly colonist</label>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Porofly_XenoType>1</Porofly_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="PoroPawnKind">
+		<defName>ProtoporoColonist</defName>
+		<label>protoporo colonist</label>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<ProtoPoro_XenoType>1</ProtoPoro_XenoType>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
