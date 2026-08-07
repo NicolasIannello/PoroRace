@@ -11,7 +11,7 @@
 		<requiredGenes>
 			<li>Gene_PoroBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 
@@ -20,7 +20,7 @@
 		<requiredGenes>
 			<li>Porofly_wings</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro_Head1</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 
@@ -29,7 +29,16 @@
 		<requiredGenes>
 			<li>Gene_FablePoroBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/FablePoro_Head1</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/FablePoro/FablePoro_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="PoroBase">
+		<defName>ProtoPoro_Head1</defName>
+		<requiredGenes>
+			<li>Gene_ProtoPoroBody</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
 </Defs>

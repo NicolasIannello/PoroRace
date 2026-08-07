@@ -4,8 +4,8 @@
 	<BodyTypeDef Name="Naked_Poro">
 		<defName>Naked_Poro</defName>
 		<label>poro</label>
-		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Poro</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_Poro</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Poro/Naked_Poro</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Poro/Naked_Poro</bodyDessicatedGraphicPath>
 		<bodyGraphicScale>(1, 1)</bodyGraphicScale>
 		<headOffset>(0, 0)</headOffset>
 		<woundAnchors>
@@ -161,8 +161,8 @@
 	<BodyTypeDef ParentName="Naked_Poro">
 		<defName>Naked_FablePoro</defName>
 		<label>fabled poro</label>
-		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyNakedGraphicPath>
-		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Naked_FablePoro</bodyDessicatedGraphicPath>
+		<bodyNakedGraphicPath>Things/Pawn/Humanlike/Bodies/FablePoro/Naked_FablePoro</bodyNakedGraphicPath>
+		<bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/FablePoro/Naked_FablePoro</bodyDessicatedGraphicPath>
 	</BodyTypeDef>
 	
 </Defs>
