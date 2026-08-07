@@ -48,7 +48,7 @@
 		</forcedHeadTypes>
 		<exclusionTags>
 			<li>BodyType</li>
-			<li>Fur</li>
+			<!--<li>Fur</li>-->
 		</exclusionTags>
 		<geneClass>PoroRace.Gene_PoroBody</geneClass>
 		<skinIsHairColor>true</skinIsHairColor>
@@ -98,6 +98,7 @@
 			<li>Grants a spellshield</li>
 			<li>Ignores difficult terrain</li>
 		</customEffectDescriptions>
+		<fur>Porofly_Fur</fur>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
@@ -114,6 +115,15 @@
 						<layer>60</layer>
 					</dataNorth>
 				</drawData>
+			</li>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>55</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Custom</colorType>
+				<parentTagDef>Body</parentTagDef>
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
@@ -144,4 +154,33 @@
 			</li>
 		</renderNodeProperties>
 	</GeneDef>
+
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Gene_ProtoPoroBody</defName>
+		<label>Proto Poro</label>
+		<labelShortAdj>Proto Poro</labelShortAdj>
+		<description>The poros of yesteryear had much thicker heads than their contemporary kin, making them a little bit dumber, and a whole lot headbuttier.</description>
+		<iconPath>Xenotypes/ProtoPoroIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatMet>-1</biostatMet>
+		<forcedHeadTypes>
+			<li>ProtoPoro_Head1</li>
+		</forcedHeadTypes>
+		<statFactors>
+			<MeleeCooldownFactor>0.40</MeleeCooldownFactor>
+		</statFactors>
+	    <fur>ProtoPoro_Fur</fur>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>55</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Custom</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
+
 </Defs>

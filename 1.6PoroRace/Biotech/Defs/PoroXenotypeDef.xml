@@ -104,5 +104,42 @@
 			<li>AptitudeTerrible_Intellectual</li>
 		</genes>
 	</XenotypeDef>
-	
+
+	<XenotypeDef>
+		<defName>ProtoPoro_XenoType</defName>
+		<label>Proto Poro</label>
+		<description>The poros of yesteryear had much thicker heads than their contemporary kin, making them a little bit dumber, and a whole lot headbuttier.</description>
+		<descriptionShort>The poros of yesteryear had much thicker heads than their contemporary kin.</descriptionShort>
+		<iconPath>Xenotypes/ProtoPoroIcon</iconPath>
+		<inheritable>false</inheritable>
+		<combatPowerFactor>2</combatPowerFactor>
+		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<genes>
+			<li>DiseaseFree</li>
+			<li>AnimalWarcall</li>
+			<li>Immunity_Strong</li>
+			<li>Superclotting</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Mood_Optimist</li>
+			<li>Aggression_Aggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Sleepy</li>
+			<li>Robust</li>
+			<li>Sterile</li>
+			<li>Brow_Heavy</li>
+			<li>Headbone_MiniHorns</li>
+			<li>VoiceRoar</li>
+			<li>Hair_SnowWhite</li>
+			<li>Gene_ProtoPoroBody</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Nearsighted</li>
+			<li>Gene_PoroMetabolism</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
 </Defs>

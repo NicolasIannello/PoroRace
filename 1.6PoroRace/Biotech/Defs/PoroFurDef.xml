@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FurDef>
+		<defName>ProtoPoro_Fur</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Naked_Poro>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Naked_Poro>
+			<Male>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Male>
+			<Female>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Female>
+			<Hulk>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Hulk>
+			<Fat>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Fat>
+			<Thin>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/ProtoPoro/ProtoPoro_Fur</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+
+	<FurDef>
+		<defName>Porofly_Fur</defName>
+		<noGraphic>true</noGraphic>
+		<bodyTypeGraphicPaths>
+			<Naked_Poro>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Naked_Poro>
+			<Male>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Male>
+			<Female>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Female>
+			<Hulk>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Hulk>
+			<Fat>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Fat>
+			<Thin>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Thin>
+			<Child>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Child>
+			<Baby>Things/Pawn/Humanlike/Bodies/Porofly/Porofly_Fur</Baby>
+		</bodyTypeGraphicPaths>
+	</FurDef>
+</Defs>
