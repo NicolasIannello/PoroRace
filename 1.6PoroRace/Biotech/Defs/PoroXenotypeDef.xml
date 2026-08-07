@@ -109,7 +109,7 @@
 		<defName>ProtoPoro_XenoType</defName>
 		<label>Proto Poro</label>
 		<description>The poros of yesteryear had much thicker heads than their contemporary kin, making them a little bit dumber, and a whole lot headbuttier.</description>
-		<descriptionShort>The poros of yesteryear had much thicker heads than their contemporary kin.</descriptionShort>
+		<descriptionShort>A little bit dumber, and a whole lot headbuttier.</descriptionShort>
 		<iconPath>Xenotypes/ProtoPoroIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>2</combatPowerFactor>
