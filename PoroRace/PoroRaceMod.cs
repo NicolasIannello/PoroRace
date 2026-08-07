@@ -26,11 +26,14 @@ namespace PoroRace
     [DefOf]
     public static class PoroRaceDefOf
     {
+        public static GeneDef Gene_PoroMetabolism;
         public static GeneDef Gene_FablePoroBody;
         public static GeneDef Gene_PoroBody;
         public static GeneDef Porofly_wings;
         public static XenotypeDef FablePoro_XenoType;
         public static XenotypeDef Porofly_XenoType;
+        public static XenotypeDef ProtoPoro_XenoType;
+        public static PawnKindDef PoroSlave;
 
         static PoroRaceDefOf()
         {
