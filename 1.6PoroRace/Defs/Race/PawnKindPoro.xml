@@ -99,11 +99,35 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>6~12</range>
+				<range>0~8</range>
 			</li>
 			<li>
 				<skill>Melee</skill>
-				<range>6~12</range>
+				<range>0~3</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="EnemyPoro">
+		<defName>PlunderingProtoPoro</defName>
+		<label>plundering proto poro</label>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<ProtoPoro_XenoType>1</ProtoPoro_XenoType>
+			</xenotypeChances>
+		</xenotypeSet>
+		<weaponTags Inherit="False">
+			<li>MeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>0~6</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>0~6</range>
 			</li>
 		</skills>
 	</PawnKindDef>

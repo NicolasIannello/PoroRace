@@ -163,7 +163,8 @@
 			<li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<PlunderingPoro>1</PlunderingPoro>
+					<PlunderingPoro>15</PlunderingPoro>
+					<PlunderingProtoPoro>3</PlunderingProtoPoro>
 				</options>
 			</li>
 		</pawnGroupMakers>
