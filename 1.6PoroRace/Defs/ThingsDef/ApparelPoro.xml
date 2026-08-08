@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--
+		<thingCategories>
+			<li></li>
+		</thingCategories>
+		<apparel>
+			<layers>
+				<li>Shell</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>PoroArmor</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>PoroArmor</li>
+		</tradeTags>
+	-->
+	
 	<ThingCategoryDef>
 		<defName>Poro_Category_Armor</defName>
 		<label>Poro armor</label>
