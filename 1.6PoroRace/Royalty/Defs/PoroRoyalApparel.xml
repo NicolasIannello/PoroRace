@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>PoroApparel_RobeRoyal</defName>
+		<label>prestige poro robe</label>
+		<description>A long, flowing robe embroidered with complex decorative designs for poros.</description>
+		<recipeMaker>
+			<researchPrerequisite>RoyalApparel</researchPrerequisite>
+			<displayPriority>245</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Apparel/Poro_RoyalRobe/Poro_RoyalRobe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.75</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Poro_Category_Apparel</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Poro_RoyalRobe/Poro_RoyalRobe</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Royal</li>
+				<li>RoyalTier6</li>
+				<li>RoyalRobe</li>
+				<li>PoroApparel</li>
+			</tags>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<legsNakedUnlessCoveredBySomethingElse>false</legsNakedUnlessCoveredBySomethingElse>
+			<drawData>
+				<defaultData>
+					<offset>(0, 0, 0)</offset>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, 0)</offset>
+				</dataNorth>
+				<dataEast>
+					<offset>(0.02, 0, 0)</offset>
+				</dataEast>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<tradeTags>
+			<li>PoroApparel</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
