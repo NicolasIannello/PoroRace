@@ -10,40 +10,36 @@ namespace PoroRace
 {
     public class Gene_PoroBody : Gene
     {
-        readonly string body = "Naked_Poro";
+        readonly BodyTypeDef bodyDef = PoroRaceDefOf.Naked_Poro;
         public override void PostAdd()
         {
             base.PostAdd();
 
             if (pawn.story != null && Active)
             {
-                BodyTypeDef poroBody = DefDatabase<BodyTypeDef>.GetNamedSilentFail(body);
-                if (poroBody != null)
+                if (pawn.apparel != null)
                 {
-                    if (pawn.apparel != null)
+                    for (int i = pawn.apparel.WornApparel.Count - 1; i >= 0; i--)
                     {
-                        for (int i = pawn.apparel.WornApparel.Count - 1; i >= 0; i--)
+                        Apparel apparel = pawn.apparel.WornApparel[i];
+                        var layers = apparel.def.apparel.layers;
+
+                        if (!layers.Contains(ApparelLayerDefOf.Overhead) || !layers.Contains(ApparelLayerDefOf.EyeCover) || !apparel.def.apparel.tags.Contains("PoroApparel"))
                         {
-                            Apparel apparel = pawn.apparel.WornApparel[i];
-                            var layers = apparel.def.apparel.layers;
+                            pawn.apparel.Remove(apparel);
 
-                            if (!layers.Contains(ApparelLayerDefOf.Overhead) || !layers.Contains(ApparelLayerDefOf.EyeCover) || !apparel.def.apparel.tags.Contains("PoroApparel"))
+                            if (pawn.inventory != null && pawn.inventory.innerContainer != null)
                             {
-                                pawn.apparel.Remove(apparel);
-
-                                if (pawn.inventory != null && pawn.inventory.innerContainer != null)
-                                {
-                                    pawn.inventory.innerContainer.TryAddOrTransfer(apparel);
-                                }
+                                pawn.inventory.innerContainer.TryAddOrTransfer(apparel);
                             }
                         }
                     }
-
-                    pawn.story.bodyType = poroBody;
-
-                    pawn.Drawer?.renderer?.SetAllGraphicsDirty();
-                    pawn.Drawer?.renderer?.renderTree?.SetDirty();
                 }
+
+                pawn.story.bodyType = bodyDef;
+
+                pawn.Drawer?.renderer?.SetAllGraphicsDirty();
+                pawn.Drawer?.renderer?.renderTree?.SetDirty();
             }
         }
 
@@ -115,7 +111,7 @@ namespace PoroRace
 
     public class Gene_FablePoroBody : Gene_PoroBody
     {
-        readonly string body = "Naked_FablePoro";
+        readonly BodyTypeDef bodyDef = PoroRaceDefOf.Naked_FablePoro;
     }
 
     [StaticConstructorOnStartup]

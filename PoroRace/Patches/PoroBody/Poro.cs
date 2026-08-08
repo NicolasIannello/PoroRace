@@ -14,17 +14,17 @@ namespace PoroRace
         {
             if (pawn.story?.bodyType == null) return true;
 
-            if (pawn.story.bodyType.defName == "Naked_Poro")
+            if (pawn.story.bodyType.defName == PoroRaceDefOf.Naked_Poro.defName)
             {
-                string path = "Things/Pawn/Humanlike/Bodies/Naked_Poro";
+                string path = PoroRaceDefOf.Naked_Poro.bodyNakedGraphicPath;
 
                 __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
 
                 return false;
-            } 
-            else if (pawn.story.bodyType.defName == "Naked_FablePoro") 
+            }
+            else if (pawn.story.bodyType.defName == PoroRaceDefOf.Naked_FablePoro.defName)
             {
-                string path = "Things/Pawn/Humanlike/Bodies/Naked_FablePoro";
+                string path = PoroRaceDefOf.Naked_FablePoro.bodyNakedGraphicPath;
 
                 __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
 
@@ -46,6 +46,7 @@ namespace PoroRace
 
                 if (learnedSkill == SkillDefOf.Construction || learnedSkill == SkillDefOf.Crafting) EvolvePoro(user, user.skills.GetSkill(__instance.Props.skill).GetLevel(), PoroRaceDefOf.FablePoro_XenoType);
                 if (learnedSkill == SkillDefOf.Medicine) EvolvePoro(user, user.skills.GetSkill(__instance.Props.skill).GetLevel(), PoroRaceDefOf.Porofly_XenoType);
+                if (learnedSkill == SkillDefOf.Melee) EvolvePoro(user, user.skills.GetSkill(__instance.Props.skill).GetLevel(), PoroRaceDefOf.ProtoPoro_XenoType);
             }
         }
 
@@ -77,7 +78,7 @@ namespace PoroRace
     {
         public static void Postfix(Pawn p, ref TraderCaravanRole __result)
         {
-            if (p.kindDef.defName == "PoroSlave") __result = TraderCaravanRole.Chattel;
+            if (p.kindDef == PoroRaceDefOf.PoroSlave) __result = TraderCaravanRole.Chattel;
         }
     }
 
