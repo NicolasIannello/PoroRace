@@ -1,6 +1,7 @@
 ﻿using PoroRace.UI;
 using RimWorld;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -130,7 +131,7 @@ namespace PoroRace
         public int EnergyReset = 3200;
         private int KeepDisplayingTicks = 1000;
         private int lastAbsorbDamageTick = -9999;
-
+        public static readonly ConditionalWeakTable<Pawn, Gene_PoroflyBody> PoroflyWeakTable = new ConditionalWeakTable<Pawn, Gene_PoroflyBody>();
         public ShieldState ShieldState
         {
             get
@@ -183,12 +184,26 @@ namespace PoroRace
             }
         }
 
+        public override void PostAdd()
+        {
+            base.PostAdd();
+            PoroflyWeakTable.Remove(this.pawn);
+            PoroflyWeakTable.Add(this.pawn, this);
+        }
+
+        public override void PostRemove()
+        {
+            base.PostRemove();
+            PoroflyWeakTable.Remove(this.pawn);
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref energy, "energy", 0f);
             Scribe_Values.Look(ref ticksToReset, "ticksToReset", -1);
             Scribe_Values.Look(ref lastKeepDisplayTick, "lastKeepDisplayTick", 0);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && this.pawn != null) PoroflyWeakTable.Add(this.pawn, this);
         }
 
         public override IEnumerable<Gizmo> GetGizmos()

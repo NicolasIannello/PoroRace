@@ -52,10 +52,9 @@ namespace PoroRace.Patches.PoroBody
     {
         public static void Postfix(Pawn __instance, Vector3 drawLoc)
         {
-            if (__instance.genes != null && __instance.genes.HasActiveGene(PoroRaceDefOf.Porofly_wings))
+            if ((__instance.Drafted || __instance.Faction != Faction.OfPlayer) && __instance.genes != null)
             {
-                Gene_PoroflyBody shield = __instance.genes.GetFirstGeneOfType<Gene_PoroflyBody>();
-                shield?.Draw();
+                if (Gene_PoroflyBody.PoroflyWeakTable.TryGetValue(__instance, out Gene_PoroflyBody gene)) gene.Draw();
             }
         }
     }
