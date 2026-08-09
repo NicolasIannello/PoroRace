@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Gen\PoroGen.cs" />
+    <Compile Include="Patches\AnomalyPoro.cs" />
     <Compile Include="Patches\PoroApparel\ApparelPoro.cs" />
     <Compile Include="Patches\PoroBody\FablePoro.cs" />
     <Compile Include="Patches\PoroBody\Porofly.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Things\Porosnack.cs" />
     <Compile Include="UI\PoroflyShieldGizmo.cs" />
+    <Compile Include="Utils\PoroUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Lib.Harmony.Ref">
