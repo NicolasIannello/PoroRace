@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>Pawn_Poro_Call</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Furskin/Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>30</volumeRange>
+				<pitchRange>2.1~2.6</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Poro_Death</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Furskin/Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>35</volumeRange>
+				<pitchRange>2.1~2.6</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Poro_Wounded</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Pawn/Humanlike/Furskin/Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>35</volumeRange>
+				<pitchRange>2.1~2.6</pitchRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

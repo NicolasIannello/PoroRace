@@ -205,5 +205,53 @@
 			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</CertaintyLossFactor>
 		</statFactors>
 	</GeneDef>
-	
+
+	<GeneDef ParentName="GeneVoiceBase">
+		<defName>VoicePoro</defName>
+		<label>poro voice</label>
+		<description>Carriers have an animal-like poro voice.</description>
+		<iconPath>UI/Icons/Genes/Gene_VoiceRoar</iconPath>
+		<displayOrderInCategory>130</displayOrderInCategory>
+		<soundCall>Pawn_Poro_Call</soundCall>
+		<soundDeath>Pawn_Poro_Death</soundDeath>
+		<soundWounded>Pawn_Poro_Wounded</soundWounded>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li>
+					<symbol>roarer</symbol>
+				</li>
+				<li>
+					<symbol>growler</symbol>
+				</li>
+				<li>
+					<symbol>snarler</symbol>
+				</li>
+				<li>
+					<symbol>bellower</symbol>
+				</li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li>
+					<symbol>roar</symbol>
+				</li>
+				<li>
+					<symbol>growl</symbol>
+				</li>
+				<li>
+					<symbol>snarl</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>roar</symbol>
+				</li>
+				<li>
+					<symbol>snarl</symbol>
+				</li>
+				<li>
+					<symbol>growl</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
 </Defs>
