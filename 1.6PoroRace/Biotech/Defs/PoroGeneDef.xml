@@ -183,4 +183,27 @@
 		</renderNodeProperties>
 	</GeneDef>
 
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Gene_PoroKingBody</defName>
+		<label>Poro King</label>
+		<labelShortAdj>Poro King</labelShortAdj>
+		<description>Dis is His Super-Highness Poro King's Dee-cree, for pwotection of all da peoples.</description>
+		<iconPath>Xenotypes/PoroKingIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatMet>-6</biostatMet>
+		<forcedHeadTypes>
+			<li>PoroKing_Head1</li>
+		</forcedHeadTypes>
+		<statOffsets>
+			<NegotiationAbility>0.70</NegotiationAbility>
+			<TradePriceImprovement>0.50</TradePriceImprovement>
+			<TameAnimalChance>0.70</TameAnimalChance>
+			<SocialImpact>0.70</SocialImpact>
+			<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.70</ConversionPower>
+		</statOffsets>
+		<statFactors>
+			<CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.10</CertaintyLossFactor>
+		</statFactors>
+	</GeneDef>
+	
 </Defs>

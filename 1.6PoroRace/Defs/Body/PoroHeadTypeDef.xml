@@ -41,4 +41,13 @@
 		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
 		<gender>None</gender>
 	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="PoroBase">
+		<defName>PoroKing_Head1</defName>
+		<requiredGenes>
+			<li>Gene_PoroKingBody</li>
+		</requiredGenes>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
+		<gender>None</gender>
+	</HeadTypeDef>
 </Defs>

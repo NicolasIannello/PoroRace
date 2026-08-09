@@ -69,6 +69,10 @@ namespace PoroRace
                 {
                     poro.genes.AddGene(geneDef, xenogene: false);
                 }
+
+                string label = "PoroRace.PoroEvolveLabel".Translate();
+                string text = "PoroRace.PoroEvolveText".Translate(poro.Name.ToStringShort, xenotype.LabelCap);
+                Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.PositiveEvent, new LookTargets(poro));
             }
         }
     }
@@ -82,4 +86,12 @@ namespace PoroRace
         }
     }
 
+    [HarmonyPatch(typeof(Pawn_RoyaltyTracker), "OnPostTitleChanged")]
+    public static class Patch_Pawn_RoyaltyTracker_OnPostTitleChanged
+    {
+        public static void Postfix(Pawn_RoyaltyTracker __instance, Faction faction)
+        {
+            if(__instance.GetCurrentTitle(faction).seniority>200 && __instance.pawn.Faction == Faction.OfPlayer) Patch_CompUseEffect_LearnSkill_DoEffect.EvolvePoro(__instance.pawn, 100, PoroRaceDefOf.PoroKing_XenoType);
+        }
+    }
 }

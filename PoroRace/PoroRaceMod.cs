@@ -16,10 +16,10 @@ namespace PoroRace
             Instance = this;
         }
 
-        public override string SettingsCategory()
-        {
-            return "PoroRace";
-        }
+        //public override string SettingsCategory()
+        //{
+        //    return "PoroRace";
+        //}
   
     }
 
@@ -35,6 +35,7 @@ namespace PoroRace
         public static XenotypeDef FablePoro_XenoType;
         public static XenotypeDef Porofly_XenoType;
         public static XenotypeDef ProtoPoro_XenoType;
+        public static XenotypeDef PoroKing_XenoType;
         //PawnKindDef
         public static PawnKindDef PoroSlave;
         //BodyTypeDef

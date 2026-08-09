@@ -142,4 +142,42 @@
 			<li>AptitudeTerrible_Intellectual</li>
 		</genes>
 	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>PoroKing_XenoType</defName>
+		<label>Poro King</label>
+		<description>Dis is His Super-Highness Poro King's Dee-cree, for pwotection of all da peoples.</description>
+		<descriptionShort>Dis is His Super-Highness Poro King's Dee-cree, for pwotection of all da peoples.</descriptionShort>
+		<iconPath>Xenotypes/PoroKingIcon</iconPath>
+		<inheritable>true</inheritable>
+		<combatPowerFactor>0.5</combatPowerFactor>
+		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<genes>
+			<li>DiseaseFree</li>
+			<li>AnimalWarcall</li>
+			<li>Immunity_Strong</li>
+			<li>WoundHealing_Slow</li>
+			<li>Mood_Sanguine</li>
+			<li>MeleeDamage_Weak</li>
+			<li>KindInstinct</li>
+			<li>Sleepy</li>
+			<li>Delicate</li>
+			<li>Beauty_Beautiful</li>
+			<li>Pain_Extra</li>
+			<li>Sterile</li>
+			<li>Headbone_MiniHorns</li>
+			<li>VoiceRoar</li>
+			<li>Gene_PoroKingBody</li>
+			<li>Hair_SnowWhite</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Slow</li>
+			<li>Gene_PoroMetabolism</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudeRemarkable_Animals</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudeRemarkable_Social</li>
+			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
 </Defs>
