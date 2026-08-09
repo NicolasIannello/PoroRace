@@ -3,7 +3,7 @@
 <ModMetaData>
 	<name>Poro Race</name>
 	<author>Eximeisty</author>
-	<modVersion>1.1</modVersion>
+	<modVersion>1.1.5</modVersion>
 	<supportedVersions><li>1.6</li></supportedVersions>
 	<packageId>Eximeisty.PoroRace</packageId>
 	<description>Adds poro xenotypes from the universe of Runeterra</description>
