@@ -210,7 +210,7 @@
 		<defName>VoicePoro</defName>
 		<label>poro voice</label>
 		<description>Carriers have an animal-like poro voice.</description>
-		<iconPath>UI/Icons/Genes/Gene_VoiceRoar</iconPath>
+		<iconPath>Xenotypes/PoroVoiceIcon</iconPath>
 		<displayOrderInCategory>130</displayOrderInCategory>
 		<soundCall>Pawn_Poro_Call</soundCall>
 		<soundDeath>Pawn_Poro_Death</soundDeath>
