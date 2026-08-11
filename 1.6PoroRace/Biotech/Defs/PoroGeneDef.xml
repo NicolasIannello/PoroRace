@@ -254,4 +254,65 @@
 			</suffixSymbols>
 		</symbolPack>
 	</GeneDef>
+
+	<GeneDef ParentName="Gene_PoroBody">
+		<defName>Gene_PoroidBody</defName>
+		<label>Poroid</label>
+		<labelShortAdj>Poroid</labelShortAdj>
+		<description>The void stared at the poro, and the poro stared back.</description>
+		<iconPath>Xenotypes/PoroidIcon</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>5</biostatMet>
+		<abilities>
+			<li>Longjump</li>
+			<li MayRequiere="Ludeon.Rimworld.Anomaly">VoidTerror</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>Longjump</AbilityDef>
+			<AbilityDef MayRequiere="Ludeon.Rimworld.Anomaly">VoidTerror</AbilityDef>
+		</descriptionHyperlinks>
+		<statFactors>
+			<StudyEfficiency>2</StudyEfficiency>
+			<PsychicSensitivity>2</PsychicSensitivity>
+		</statFactors>
+		<disablesNeeds>
+			<li>Rest</li>
+			<li>Comfort</li>
+		</disablesNeeds>
+		<forcedHeadTypes>
+			<li>Poroid_Head1</li>
+		</forcedHeadTypes>
+		<capMods>
+			<li><capacity>Consciousness</capacity>	<offset>0.50</offset></li>
+			<li><capacity>Manipulation</capacity>	<offset>2.00</offset></li>
+			<li><capacity>BloodPumping</capacity>	<offset>0.50</offset></li>
+			<li><capacity>BloodFiltration</capacity><offset>0.50</offset></li>
+			<li><capacity>Hearing</capacity>		<offset>0.50</offset></li>
+			<li><capacity>Sight</capacity>			<offset>1.00</offset></li>
+			<li><capacity>Hearing</capacity>		<offset>1.00</offset></li>
+			<li><capacity>Breathing</capacity>		<offset>1.00</offset></li>
+		</capMods>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Things/Pawn/Humanlike/Attachments/PoroidTendrils/Poroid_tendrils</texPath>
+				<colorType>Hair</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Body</parentTagDef>
+				<overrideMeshSize>(1.5, 1.5)</overrideMeshSize>
+				<drawData>
+					<defaultData>
+						<layer>10</layer>
+					</defaultData>
+					<dataNorth>
+						<layer>70</layer>
+					</dataNorth>
+					<dataEast>
+						<layer>70</layer>
+					</dataEast>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+	</GeneDef>
 </Defs>

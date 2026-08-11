@@ -18,4 +18,17 @@ namespace PoroRace.Patches
             }
         }
     }
+
+    [HarmonyPatch(typeof(PsychicRitualGraph), nameof(PsychicRitualGraph.End))]
+    public static class Patch_PsychicRitualGraph_End
+    {
+        public static void Postfix(PsychicRitual psychicRitual, PsychicRitualGraph parent, bool success)
+        {
+            if (psychicRitual.succeeded)
+            {
+                Pawn invoker = psychicRitual.assignments.FirstAssignedPawn(PsychicRitualRoleDefOf.Invoker);
+                if (invoker!=null && invoker.genes != null && invoker.genes.HasActiveGene(PoroRaceDefOf.Gene_PoroBody)) PoroUtility.EvolvePoro(invoker, (int)(psychicRitual.power*100)/2-13, PoroRaceDefOf.Poroid_XenoType);
+            }
+        }
+    }
 }

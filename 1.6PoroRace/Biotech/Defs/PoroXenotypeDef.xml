@@ -10,6 +10,7 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
 			<li>Immunity_Strong</li>
@@ -47,6 +48,7 @@
 		<combatPowerFactor>1</combatPowerFactor>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
 			<li>Immunity_Strong</li>
@@ -80,6 +82,7 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
 			<li>AnimalWarcall</li>
@@ -115,10 +118,11 @@
 		<combatPowerFactor>2</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
 			<li>Immunity_Strong</li>
-			<li>Superclotting</li>
+			<li>WoundHealing_Fast</li>
 			<li>MoveSpeed_Quick</li>
 			<li>Mood_Optimist</li>
 			<li>Aggression_Aggressive</li>
@@ -153,6 +157,7 @@
 		<combatPowerFactor>0.5</combatPowerFactor>
 		<factionlessGenerationWeight>8</factionlessGenerationWeight>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
 			<li>AnimalWarcall</li>
 			<li>Immunity_Strong</li>
@@ -178,6 +183,44 @@
 			<li>AptitudePoor_Medicine</li>
 			<li>AptitudeRemarkable_Social</li>
 			<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Poroid_XenoType</defName>
+		<label>Poroid</label>
+		<description>The void stared at the poro, and the poro stared back.</description>
+		<descriptionShort>The void stared at the poro, and the poro stared back.</descriptionShort>
+		<iconPath>Xenotypes/PoroidIcon</iconPath>
+		<inheritable>false</inheritable>
+		<combatPowerFactor>3</combatPowerFactor>
+		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<genes>
+			<li>Deathless</li>
+			<li>AnimalWarcall</li>
+			<li>TotalHealing</li>
+			<li>Hair_Grayless</li>
+			<li>Hair_InkBlack</li>
+			<li>DiseaseFree</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>Mood_Pessimist</li>
+			<li>Superclotting</li>
+			<li>MoveSpeed_Quick</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Sleepy</li>
+			<li>Pain_Reduced</li>
+			<li>Sterile</li>
+			<li>Headbone_MiniHorns</li>
+			<li>VoicePoro</li>
+			<li>Gene_PoroidBody</li>
+			<li>RobustDigestion</li>
+			<li>Gene_PoroMetabolism</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeRemarkable_Intellectual</li>
 		</genes>
 	</XenotypeDef>
 </Defs>

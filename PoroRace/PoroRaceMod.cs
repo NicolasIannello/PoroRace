@@ -36,6 +36,7 @@ namespace PoroRace
         public static XenotypeDef Porofly_XenoType;
         public static XenotypeDef ProtoPoro_XenoType;
         public static XenotypeDef PoroKing_XenoType;
+        public static XenotypeDef Poroid_XenoType;
         //PawnKindDef
         public static PawnKindDef PoroSlave;
         //BodyTypeDef
