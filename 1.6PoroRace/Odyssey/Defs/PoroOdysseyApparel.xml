@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ApparelBase">
+		<defName>PoroApparel_Vacsuit</defName>
+		<label>poro vacsuit</label>
+		<description>A protective suit that keeps the poro safe in the vacuum of space. The suit restricts the poro's movement, considerably reducing their poro movement poro speed.</description>
+		<generateAllowChance>0</generateAllowChance>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Apparel/Poro_Vacsuit/Poro_vacsuit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>48000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>12</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>0.52</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.66</ArmorRating_Heat>
+			<Insulation_Cold>90</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>14</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.25</MoveSpeed>
+			<VacuumResistance>0.32</VacuumResistance>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Poro_Category_Armor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HiTechArmor</li>
+			<li>Armor</li>
+		</tradeTags>
+		<smeltable>true</smeltable>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Apparel/Poro_Vacsuit/Poro_vacsuit</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>SpacerMilitary</li>
+				<li>Vacsuit</li>
+				<li>PoroArmor</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Spacefarer</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+			<soundWear>Wear_PowerArmor</soundWear>
+			<soundRemove>Remove_PowerArmor</soundRemove>
+			<drawData>
+				<defaultData>
+					<layer>55</layer>
+				</defaultData>
+			</drawData>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>90</Steel>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>OrbitalTech</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<displayPriority>235</displayPriority>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tradeTags>
+			<li>PoroArmor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

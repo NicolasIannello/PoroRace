@@ -5,10 +5,20 @@
 			<li></li>
 		</thingCategories>
 		<apparel>
-			<layers>
-				<li>Shell</li>
-				<li>Overhead</li>
-			</layers>
+			<drawData>
+				<defaultData>
+					<layer>55</layer> 50 head / 70 hair
+				</defaultData>
+				<defaultData>
+					<offset>(0, 0, 0)</offset>
+				</defaultData>
+				<dataNorth>
+					<offset>(0, 0, 0)</offset>
+				</dataNorth>
+				<dataEast>
+					<offset>(0.02, 0, 0)</offset>
+				</dataEast>
+			</drawData>
 			<tags>
 				<li>PoroArmor</li>
 			</tags>
@@ -87,26 +97,18 @@
 			<wornGraphicPath>Apparel/Poro_Bucket/Poro_Bucket</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
-				<li>Overhead</li>
 			</layers>
+			<drawData>
+				<defaultData>
+					<layer>59</layer>
+				</defaultData>
+			</drawData>
 			<tags>
 				<li>PoroArmor</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
-
-			<drawData>
-				<defaultData>
-					<offset>(0, 0, 0)</offset>
-				</defaultData>
-				<dataNorth>
-					<offset>(0, 0, 0)</offset>
-				</dataNorth>
-				<dataEast>
-					<offset>(0.02, 0, 0)</offset>
-				</dataEast>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>PoroArmor</li>
@@ -158,25 +160,18 @@
 			<wornGraphicPath>Apparel/Poro_Duster/Poro_Duster</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
-				<li>Overhead</li>
 			</layers>
+			<drawData>
+				<defaultData>
+					<layer>55</layer>
+				</defaultData>
+			</drawData>
 			<tags>
 				<li>PoroApparel</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
-			<drawData>
-				<defaultData>
-					<offset>(0, 0, 0)</offset>
-				</defaultData>
-				<dataNorth>
-					<offset>(0, 0, 0)</offset>
-				</dataNorth>
-				<dataEast>
-					<offset>(0, 0, 0)</offset>
-				</dataEast>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>PoroApparel</li>

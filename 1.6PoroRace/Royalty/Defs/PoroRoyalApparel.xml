@@ -44,9 +44,13 @@
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Poro_RoyalRobe/Poro_RoyalRobe</wornGraphicPath>
 			<layers>
-				<li>Shell</li>
-				<li>Overhead</li>
+				<li>Middle</li>
 			</layers>
+			<drawData>
+				<defaultData>
+					<layer>55</layer>
+				</defaultData>
+			</drawData>
 			<tags>
 				<li>Royal</li>
 				<li>RoyalTier6</li>
@@ -57,17 +61,6 @@
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 			<legsNakedUnlessCoveredBySomethingElse>false</legsNakedUnlessCoveredBySomethingElse>
-			<drawData>
-				<defaultData>
-					<offset>(0, 0, 0)</offset>
-				</defaultData>
-				<dataNorth>
-					<offset>(0, 0, 0)</offset>
-				</dataNorth>
-				<dataEast>
-					<offset>(0.02, 0, 0)</offset>
-				</dataEast>
-			</drawData>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 		<tradeTags>

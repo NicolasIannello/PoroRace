@@ -112,15 +112,18 @@
 						<layer>10</layer>
 					</defaultData>
 					<dataNorth>
-						<layer>60</layer>
+						<layer>70</layer>
 					</dataNorth>
+					<dataEast>
+						<layer>70</layer>
+					</dataEast>
 				</drawData>
 			</li>
 			<li>
 				<debugLabel>Fur</debugLabel>
 				<nodeClass>PawnRenderNode_Fur</nodeClass>
 				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-				<baseLayer>55</baseLayer>
+				<baseLayer>51</baseLayer>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<colorType>Custom</colorType>
 				<parentTagDef>Body</parentTagDef>
@@ -175,7 +178,7 @@
 				<debugLabel>Fur</debugLabel>
 				<nodeClass>PawnRenderNode_Fur</nodeClass>
 				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
-				<baseLayer>55</baseLayer>
+				<baseLayer>51</baseLayer>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<colorType>Custom</colorType>
 				<parentTagDef>Body</parentTagDef>
