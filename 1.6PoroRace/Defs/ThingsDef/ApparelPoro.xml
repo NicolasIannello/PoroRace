@@ -41,48 +41,16 @@
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 	
-	<ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>Poro_Bucket_Armor</defName>
 		<label>Poro bucket armor</label>
-		<description>A heavy, protective bucket of armor forged from metal.</description>
+		<description>A heavy, protective bucket forged from metal.</description>
 		<possessionCount>1</possessionCount>
 		<techLevel>Medieval</techLevel>
-		<recipeMaker>
-			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
-			<recipeUsers>
-				<li>ElectricSmithy</li>
-				<li>FueledSmithy</li>
-			</recipeUsers>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-			<defaultIngredientFilter>
-				<stuffCategoriesToAllow>
-					<li>Metallic</li>
-				</stuffCategoriesToAllow>
-			</defaultIngredientFilter>
-		</recipeMaker>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>40</costStuffCount>
 		<graphicData>
 			<texPath>Apparel/Poro_Bucket/Poro_Bucket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<statBases>
-			<WorkToMake>2000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>12</Mass>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.30</ArmorRating_Heat>
-			<EquipDelay>1</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.40</MoveSpeed>
-		</equippedStatOffsets>
 		<thingCategories>
 			<li>Poro_Category_Armor</li>
 		</thingCategories>
@@ -113,6 +81,51 @@
 		<tradeTags>
 			<li>PoroArmor</li>
 		</tradeTags>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<displayPriority>250</displayPriority>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.8</MoveSpeed>
+		</equippedStatOffsets>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+			</options>
+		</colorGenerator>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
