@@ -10,7 +10,7 @@ namespace PoroRace
 {
     public class Gene_PoroBody : Gene
     {
-        readonly BodyTypeDef bodyDef = PoroRaceDefOf.Naked_Poro;
+        public virtual BodyTypeDef BodyDef => PoroRaceDefOf.Naked_Poro;
         public override void PostAdd()
         {
             base.PostAdd();
@@ -36,8 +36,7 @@ namespace PoroRace
                     }
                 }
 
-                pawn.story.bodyType = bodyDef;
-
+                pawn.story.bodyType = BodyDef;
                 pawn.Drawer?.renderer?.SetAllGraphicsDirty();
                 pawn.Drawer?.renderer?.renderTree?.SetDirty();
             }
@@ -111,7 +110,7 @@ namespace PoroRace
 
     public class Gene_FablePoroBody : Gene_PoroBody
     {
-        readonly BodyTypeDef bodyDef = PoroRaceDefOf.Naked_FablePoro;
+        public override BodyTypeDef BodyDef => PoroRaceDefOf.Naked_FablePoro;
     }
 
     [StaticConstructorOnStartup]
