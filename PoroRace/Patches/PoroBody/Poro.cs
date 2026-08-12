@@ -15,19 +15,19 @@ namespace PoroRace
         {
             if (pawn.story?.bodyType == null) return true;
 
-            if (pawn.story.bodyType.defName == PoroRaceDefOf.Naked_Poro.defName)
+            if (pawn.story.bodyType == PoroRaceDefOf.Naked_Poro)
             {
                 string path = PoroRaceDefOf.Naked_Poro.bodyNakedGraphicPath;
 
-                __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
+                __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, pawn.story.SkinColor);
 
                 return false;
             }
-            else if (pawn.story.bodyType.defName == PoroRaceDefOf.Naked_FablePoro.defName)
+            else if (pawn.story.bodyType == PoroRaceDefOf.Naked_FablePoro)
             {
                 string path = PoroRaceDefOf.Naked_FablePoro.bodyNakedGraphicPath;
 
-                __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkin, Vector2.one, pawn.story.SkinColor);
+                __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, pawn.story.SkinColor);
 
                 return false;
             }
