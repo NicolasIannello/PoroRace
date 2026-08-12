@@ -4,6 +4,8 @@
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
 		<eyeOffsetEastWest>(0.16, 0, 0.17)</eyeOffsetEastWest>
+		<gender>None</gender>
+		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -11,8 +13,6 @@
 		<requiredGenes>
 			<li>Gene_PoroBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -20,8 +20,6 @@
 		<requiredGenes>
 			<li>Porofly_wings</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -30,7 +28,6 @@
 			<li>Gene_FablePoroBody</li>
 		</requiredGenes>
 		<graphicPath>Things/Pawn/Humanlike/Heads/FablePoro/FablePoro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -38,8 +35,6 @@
 		<requiredGenes>
 			<li>Gene_ProtoPoroBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -47,8 +42,6 @@
 		<requiredGenes>
 			<li>Gene_PoroKingBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 
 	<HeadTypeDef ParentName="PoroBase">
@@ -56,7 +49,5 @@
 		<requiredGenes>
 			<li>Gene_PoroidBody</li>
 		</requiredGenes>
-		<graphicPath>Things/Pawn/Humanlike/Heads/Poro/Poro_Head1</graphicPath>
-		<gender>None</gender>
 	</HeadTypeDef>
 </Defs>
