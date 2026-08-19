@@ -17,30 +17,33 @@ namespace PoroRace.Patches.PoroBody
         }
     }
 
-    [HarmonyPatch(typeof(Pawn_HealthTracker), "PreApplyDamage")]
-    public static class Patch_Pawn_HealthTracker_PreApplyDamage
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.PreApplyDamage))]
+    public static class Patch_Pawn_PreApplyDamage
     {
-        public static bool Prefix(Pawn_HealthTracker __instance, ref DamageInfo dinfo, out bool absorbed, Pawn ___pawn)
+        public static bool Prefix(Pawn __instance, ref DamageInfo dinfo, out bool absorbed)
         {
             absorbed = false;
-            if (___pawn?.genes == null) return true;
+            if (__instance?.genes == null) return true;
 
-            Gene_PoroflyBody shield = ___pawn.genes.GetFirstGeneOfType<Gene_PoroflyBody>();
-            if (shield != null && shield.ShieldState == ShieldState.Active)
+            if (Gene_PoroflyBody.PoroflyWeakTable.TryGetValue(__instance, out Gene_PoroflyBody shield))
             {
-                if (dinfo.Def == DamageDefOf.EMP)
+                if (shield != null && shield.ShieldState == ShieldState.Active)
                 {
-                    shield.Break();
-                    return true;
-                }
-                if (!dinfo.Def.ignoreShields && (dinfo.Def.isRanged || dinfo.Def.isExplosive))
-                {
-                    shield.energy -= dinfo.Amount * 3.33f;
-                    if (shield.energy <= 0f) shield.Break();
-                    else shield.AbsorbedDamage(dinfo);
+                    if (dinfo.Def == DamageDefOf.EMP)
+                    {
+                        shield.Break();
+                        return true;
+                    }
 
-                    absorbed = true;
-                    return false;
+                    if (!dinfo.Def.ignoreShields && (dinfo.Def.isRanged || dinfo.Def.isExplosive))
+                    {
+                        shield.energy -= dinfo.Amount * 3.33f;
+                        if (shield.energy <= 0f) shield.Break();
+                        else shield.AbsorbedDamage(dinfo);
+
+                        absorbed = true;
+                        return false;
+                    }
                 }
             }
             return true;
