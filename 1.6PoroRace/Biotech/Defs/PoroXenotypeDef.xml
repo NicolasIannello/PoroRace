@@ -8,7 +8,7 @@
 		<iconPath>Xenotypes/PoroIcon</iconPath>
 		<inheritable>true</inheritable>
 		<combatPowerFactor>0.5</combatPowerFactor>
-		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<factionlessGenerationWeight>3</factionlessGenerationWeight>
 		<genes>
 			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
@@ -80,7 +80,7 @@
 		<iconPath>Xenotypes/PoroflyIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>0.5</combatPowerFactor>
-		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
@@ -116,7 +116,7 @@
 		<iconPath>Xenotypes/ProtoPoroIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>2</combatPowerFactor>
-		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<factionlessGenerationWeight>1</factionlessGenerationWeight>
 		<genes>
 			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
@@ -155,7 +155,7 @@
 		<iconPath>Xenotypes/PoroKingIcon</iconPath>
 		<inheritable>true</inheritable>
 		<combatPowerFactor>0.5</combatPowerFactor>
-		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>Hair_Grayless</li>
 			<li>DiseaseFree</li>
@@ -194,7 +194,7 @@
 		<iconPath>Xenotypes/PoroidIcon</iconPath>
 		<inheritable>false</inheritable>
 		<combatPowerFactor>3</combatPowerFactor>
-		<factionlessGenerationWeight>8</factionlessGenerationWeight>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>Deathless</li>
 			<li>AnimalWarcall</li>
