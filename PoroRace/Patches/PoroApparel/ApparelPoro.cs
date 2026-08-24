@@ -15,7 +15,7 @@ namespace PoroRace
 
             if (thing.def?.apparel != null && pawn.genes != null)
             {
-                if (PoroApparelHelper.CanWearPoroApparel(thing.def.apparel, pawn, true, "CanEquip", ref cantReason)) __result = false;
+                if (PoroApparelHelper.CanWearPoroApparel(thing.def.apparel, pawn, "CanEquip", ref cantReason)) __result = false;
             }
         }
     }
@@ -27,7 +27,7 @@ namespace PoroRace
         {
             if (ap.def?.apparel != null && pawn.genes != null)
             {
-                if (PoroApparelHelper.CanWearPoroApparel(ap.def.apparel, pawn, true, "ScoreGain")) __result = -1000f;
+                if (PoroApparelHelper.CanWearPoroApparel(ap.def.apparel, pawn, "ScoreGain")) __result = -1000f;
             }
         }
     }
@@ -39,21 +39,19 @@ namespace PoroRace
         {
             if (!__result || pawn?.genes == null) return;
 
-            if(PoroApparelHelper.CanWearPoroApparel(__instance, pawn, false, "PawnCanWear")) __result = false;
+            if(PoroApparelHelper.CanWearPoroApparel(__instance, pawn, "PawnCanWear")) __result = false;
         }
     }
 
     public static class PoroApparelHelper
     {
-        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, bool flag, string log)
+        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, string log)
         {
             string dummyReason = null;
-            return CanWearPoroApparel(apparel, pawn, flag, log, ref dummyReason);
+            return CanWearPoroApparel(apparel, pawn, log, ref dummyReason);
         }
-        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, bool flag, string log, ref string cantReason)
+        public static bool CanWearPoroApparel(ApparelProperties apparel, Pawn pawn, string log, ref string cantReason)
         {
-            //Log.Message(log);
-
             bool isPoro = pawn.genes.HasActiveGene(PoroRaceDefOf.Gene_PoroMetabolism);
             var layers = apparel.layers;
             bool poroApparel = apparel.tags.Contains("PoroApparel") || apparel.tags.Contains("PoroArmor");
@@ -61,7 +59,6 @@ namespace PoroRace
             bool torsoOrLegs = layers.Contains(ApparelLayerDefOf.Middle) || layers.Contains(ApparelLayerDefOf.OnSkin) || layers.Contains(ApparelLayerDefOf.Shell);
 
             cantReason= null;
-            if(!flag) return (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)));
 
             if (isPoro && (!poroApparel && (!headOrBelt || torsoOrLegs)))
             {
