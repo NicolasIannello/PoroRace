@@ -6,19 +6,20 @@ using Verse;
 
 namespace PoroRace
 {
-    //HAR patch
+    //HAR/Coventech patch
     [HarmonyPatch(typeof(PawnRenderNode_Body), nameof(PawnRenderNode_Body.GraphicFor))]
     public static class Patch_PawnRenderNode_Body_GraphicFor
     {
         [HarmonyPriority(Priority.First)]
-        public static bool Prefix(Pawn pawn, ref Graphic __result)
+        public static bool Prefix(Pawn pawn, ref Graphic __result, out BodyTypeDef __state)
         {
+            __state = null;
             if (pawn.story?.bodyType == null) return true;
 
             if (pawn.story.bodyType == PoroRaceDefOf.Naked_Poro)
             {
                 string path = PoroRaceDefOf.Naked_Poro.bodyNakedGraphicPath;
-
+                __state = PoroRaceDefOf.Naked_Poro;
                 __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, pawn.story.SkinColor);
 
                 return false;
@@ -26,13 +27,24 @@ namespace PoroRace
             else if (pawn.story.bodyType == PoroRaceDefOf.Naked_FablePoro)
             {
                 string path = PoroRaceDefOf.Naked_FablePoro.bodyNakedGraphicPath;
-
+                __state = PoroRaceDefOf.Naked_FablePoro;
                 __result = GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, pawn.story.SkinColor);
 
                 return false;
             }
 
             return true;
+        }
+
+        [HarmonyPriority(Priority.Last)]
+        public static void Postfix(Pawn pawn, BodyTypeDef __state)
+        {
+            if (__state == null) return;
+
+            if (pawn.story != null)
+            {
+                pawn.story.bodyType = __state;
+            }
         }
     }
 
