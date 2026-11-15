@@ -3,7 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-PublishedFileId.txt
 .idea
 # User-specific files
 *.rsuser
@@ -11,7 +10,7 @@ PublishedFileId.txt
 *.user
 *.userosscache
 *.sln.docstates
-
+1.6PoroRace/Assets.*
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
